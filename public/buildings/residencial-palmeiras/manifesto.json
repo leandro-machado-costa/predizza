@@ -1,0 +1,107 @@
+{
+  "id": "residencial-palmeiras",
+  "name": "Residencial Jardim das Palmeiras",
+  "version": 1,
+  "description": "Edifício residencial exemplo (torre única, 8 andares + térreo + cobertura técnica). Layout típico brasileiro para demo Prediza.",
+  "source": "Projeto demo Prediza — tipologia residencial multifamiliar padrão.",
+  "dimensions": {
+    "width": 18,
+    "depth": 12,
+    "floorHeight": 3,
+    "floors": 8
+  },
+  "floors": [
+    {
+      "id": "terreo",
+      "name": "Térreo",
+      "level": 0,
+      "plantSvg": "/buildings/residencial-palmeiras/plantas/terreo.svg",
+      "spaces": [
+        { "id": "portaria", "name": "Portaria", "u": 0.12, "v": 0.78 },
+        { "id": "salao", "name": "Salão de festas", "u": 0.72, "v": 0.72 },
+        { "id": "zeladoria", "name": "Zeladoria", "u": 0.18, "v": 0.42 },
+        { "id": "hall-t", "name": "Hall social", "u": 0.5, "v": 0.55 },
+        { "id": "elev-t", "name": "Elevadores", "u": 0.5, "v": 0.38 },
+        { "id": "escada-t", "name": "Escada", "u": 0.62, "v": 0.38 },
+        { "id": "bike", "name": "Bicicletário", "u": 0.22, "v": 0.18 },
+        { "id": "lixo", "name": "DML / lixo", "u": 0.78, "v": 0.2 }
+      ]
+    },
+    {
+      "id": "tipo",
+      "name": "Pavimento tipo (1º–8º)",
+      "level": 1,
+      "plantSvg": "/buildings/residencial-palmeiras/plantas/tipo.svg",
+      "spaces": [
+        { "id": "apt-01", "name": "Apto 01", "u": 0.22, "v": 0.28 },
+        { "id": "apt-02", "name": "Apto 02", "u": 0.78, "v": 0.28 },
+        { "id": "apt-03", "name": "Apto 03", "u": 0.22, "v": 0.72 },
+        { "id": "apt-04", "name": "Apto 04", "u": 0.78, "v": 0.72 },
+        { "id": "hall", "name": "Hall do andar", "u": 0.5, "v": 0.5 },
+        { "id": "elev", "name": "Elevadores", "u": 0.5, "v": 0.38 },
+        { "id": "escada", "name": "Escada", "u": 0.62, "v": 0.38 },
+        { "id": "shaft", "name": "Shaft", "u": 0.38, "v": 0.38 }
+      ]
+    },
+    {
+      "id": "cobertura",
+      "name": "Cobertura técnica",
+      "level": 9,
+      "plantSvg": "/buildings/residencial-palmeiras/plantas/cobertura.svg",
+      "spaces": [
+        { "id": "casa-maq", "name": "Casa de máquinas", "u": 0.5, "v": 0.35 },
+        { "id": "reservatorio", "name": "Reservatório superior", "u": 0.28, "v": 0.68 },
+        { "id": "spda", "name": "SPDA", "u": 0.72, "v": 0.68 },
+        { "id": "laje", "name": "Laje de cobertura", "u": 0.5, "v": 0.55 }
+      ]
+    },
+    {
+      "id": "subsolo",
+      "name": "Subsolo / bombas",
+      "level": -1,
+      "plantSvg": "/buildings/residencial-palmeiras/plantas/subsolo.svg",
+      "spaces": [
+        { "id": "bombas", "name": "Casa de bombas", "u": 0.35, "v": 0.45 },
+        { "id": "reserv-inf", "name": "Reservatório inferior", "u": 0.7, "v": 0.45 },
+        { "id": "shaft-s", "name": "Shaft", "u": 0.5, "v": 0.25 }
+      ]
+    }
+  ],
+  "systems": [
+    {
+      "key": "elevadores",
+      "name": "Elevadores",
+      "floorId": "tipo",
+      "spaceId": "elev",
+      "map": { "x": 0, "y": 12, "z": -1.2 }
+    },
+    {
+      "key": "bombas",
+      "name": "Bombas de recalque",
+      "floorId": "subsolo",
+      "spaceId": "bombas",
+      "map": { "x": -2.5, "y": -1.2, "z": 0 }
+    },
+    {
+      "key": "fachada",
+      "name": "Fachada",
+      "floorId": "tipo",
+      "spaceId": "apt-02",
+      "map": { "x": 9.2, "y": 14, "z": 0 }
+    },
+    {
+      "key": "spda",
+      "name": "SPDA",
+      "floorId": "cobertura",
+      "spaceId": "spda",
+      "map": { "x": 4, "y": 28.5, "z": 2 }
+    },
+    {
+      "key": "reservatorio",
+      "name": "Reservatório superior",
+      "floorId": "cobertura",
+      "spaceId": "reservatorio",
+      "map": { "x": -4, "y": 28.5, "z": 2 }
+    }
+  ]
+}

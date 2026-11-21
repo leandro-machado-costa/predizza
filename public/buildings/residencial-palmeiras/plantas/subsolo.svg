@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Planta do subsolo">
+  <rect width="800" height="560" fill="#ece8e1"/>
+  <rect x="100" y="100" width="600" height="360" fill="#f7f4ee" stroke="#1c2430" stroke-width="3"/>
+  <rect x="160" y="200" width="200" height="160" fill="#d8e2dc" stroke="#0f6e56" stroke-width="2"/>
+  <text x="260" y="285" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="16" fill="#1c2430">Casa de bombas</text>
+  <rect x="440" y="200" width="200" height="160" fill="#e7efe9" stroke="#0f6e56" stroke-width="2"/>
+  <text x="540" y="285" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="15" fill="#1c2430">Reservatório inf.</text>
+  <rect x="350" y="120" width="100" height="60" fill="#eef1f4" stroke="#5b6573" stroke-width="2"/>
+  <text x="400" y="155" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#1c2430">Shaft</text>
+  <text x="400" y="70" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="18" fill="#1c2430">Subsolo técnico</text>
+</svg>

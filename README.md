@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prediza
 
-## Getting Started
+**Chegue na assembleia com o número certo.**  
+**O mapa do prédio. A previsão das reformas.**
 
-First, run the development server:
+Prediza é o **kit de assembleia** da síndica: quanto reservar, o que não pode esperar e o que confirmar no WhatsApp — com a memória do prédio viva. A construtora entrega o edifício digitalmente; a síndica decide no celular.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Entregáveis do evento
+
+| # | Entregável | Link |
+| --- | --- | --- |
+| 1 | Protótipo / demo do agente | [docs/demo-agente.md](./docs/demo-agente.md) |
+| 2 | BMC (negócio + impacto) | [docs/bmc.md](./docs/bmc.md) |
+| 3 | Pitch 3 minutos | [docs/pitch-3min.md](./docs/pitch-3min.md) |
+| 4 | Fluxo do agente (abaixo + detalhe) | [docs/agente-fluxo.md](./docs/agente-fluxo.md) |
+
+Checklist: [docs/ENTREGAVEIS.md](./docs/ENTREGAVEIS.md)
+
+---
+
+## Fluxo do agente de IA (inputs → lógica → outputs)
+
+O agente **não grava o grupo inteiro**. Ele tria relatos de manutenção com contexto do edifício e só cria ocorrência após **confirmação humana**.
+
+```text
+[WhatsApp / App]
+      │
+      ▼
+ Contexto SQLite (sistemas + OCs abertas do buildingId)
+      │
+      ▼
+ Triagem: nova | duplicata | ignorar
+ (heurística própria; OpenAI opcional)
+      │
+      ▼
+ Resposta no chat / fila no app
+      │
+      ▼
+ Humano: CONFIRMAR | VINCULAR | IGNORAR
+      │
+      ▼
+ Ocorrência na Prediza (ou descarte)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Inputs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Fonte | Como |
+| --- | --- |
+| WhatsApp | `POST /api/whatsapp/webhook` (Evolution `messages.upsert`) |
+| App | `/ai/triage` (texto + foto) ou simulação em `/whatsapp` |
+| Confirmação | `Confirmar` / `Vincular` / `Ignorar` no chat (ou botões no app) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Lógica
 
-## Learn More
+1. Filtra ruído / exige menção opcional (`@Prediza`)  
+2. Classifica com keywords + match de duplicata nas OCs abertas  
+3. Sugere sistema, prioridade, título e rationale  
+4. **Gate humano** antes de persistir ocorrência definitiva  
 
-To learn more about Next.js, take a look at the following resources:
+Código: `src/lib/ai/triage.ts`, `src/lib/whatsapp/inbound.ts`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Outputs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Output | Descrição |
+| --- | --- |
+| Classificação | `nova` / `duplicata` / `ignorar` |
+| Mensagem no grupo | Pedido de confirmação (Evolution) |
+| `whatsapp_events` + `ai_suggestions` | Fila e auditoria |
+| `occurrences` | Só após CONFIRMAR (source `whatsapp` ou `ai`) |
 
-## Deploy on Vercel
+Documentação completa: [docs/agente-fluxo.md](./docs/agente-fluxo.md).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Stack
+
+- **Next.js** (App Router) · **React** · **TypeScript** · **Tailwind**
+- **SQLite** via Drizzle ORM
+- **Evolution API** (WhatsApp) · triagem heurística + OpenAI opcional
+
+## Como rodar
+
+```bash
+npm install
+npm run db:push
+npm run db:seed
+npm run dev
+```
+
+Contas demo (senha `prediza123`):
+
+- `sindico@prediza.demo` — síndica (persona Ana)
+- `tecnico@prediza.demo` — técnico
+- `construtora@prediza.demo` — construtora
+
+**Demo rápida do agente:** login síndica → Mais → WhatsApp → simular *“Prediza — infiltração na garagem perto da bomba”* → Abrir ocorrência.
+
+## Documentação
+
+Índice em [docs/README.md](./docs/README.md):
+
+- [Produto](./docs/produto.md) · [BMC](./docs/bmc.md) · [IA](./docs/ia.md)
+- [Pitch 3 min](./docs/pitch-3min.md) · [Script de apresentação](./docs/script-apresentacao.md) · [8 slides](./docs/pitch-slides.md) · [One-pager](./docs/one-pager-banca.md)
+- [WhatsApp / Evolution](./docs/whatsapp-evolution.md) · [API](./docs/api.md)
+- [Evento / critérios](./docs/evento-avaliacao.md)
+
+## Problema
+
+Manutenção se perde no WhatsApp e na planilha; troca de síndico apaga a memória; a assembleia decide reserva sem número confiável.
+
+## Solução
+
+**Reserva + risco + confirmação humana** em cima das fichas do edifício. Construtora distribui no handover; síndica usa no celular.
+
+## Diferencial
+
+| Alternativa | Prediza |
+| --- | --- |
+| Grupo WhatsApp | Fila + confirmação + OC |
+| Planilha | Memória no edifício |
+| App de boleto | Kit assembleia em R$ |
+| CAFM / BIM | IA e decisão **antes** do IFC |
+
+## Estágio atual
+
+App funcional: home kit assembleia, fichas, wizard de entrega, forecast/PDF, triagem IA (foto+texto), agente WhatsApp (Evolution + simulação), planos assistidos, portfólio/lessons (construtora), API `/api/v1/occurrences`.
+
+## Naming
+
+**Prediza** = prédio + predição. Predio360 = MVP histórico (mapa 3D).

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Planta da cobertura técnica">
+  <rect width="800" height="560" fill="#f4f1ea"/>
+  <rect x="80" y="80" width="640" height="400" fill="#fffdf8" stroke="#1c2430" stroke-width="3"/>
+  <rect x="260" y="120" width="280" height="140" fill="#d8e2dc" stroke="#0f6e56" stroke-width="2"/>
+  <text x="400" y="195" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="16" fill="#1c2430">Casa de máquinas</text>
+  <rect x="120" y="320" width="220" height="120" fill="#e7efe9" stroke="#0f6e56" stroke-width="2"/>
+  <text x="230" y="385" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="15" fill="#1c2430">Reservatório</text>
+  <rect x="460" y="320" width="220" height="120" fill="#f6e7d8" stroke="#c45c26" stroke-width="2"/>
+  <text x="570" y="385" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="15" fill="#1c2430">SPDA</text>
+  <text x="400" y="300" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" fill="#5b6573">Laje de cobertura</text>
+  <text x="400" y="50" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="18" fill="#1c2430">Cobertura técnica</text>
+</svg>

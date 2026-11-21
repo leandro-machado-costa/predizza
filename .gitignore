@@ -23,6 +23,9 @@
 # misc
 .DS_Store
 *.pem
+.idea/
+.vscode/
+*.swp
 
 # debug
 npm-debug.log*
@@ -30,8 +33,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env (commitamos só o exemplo)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +43,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local sqlite / dados
+/data/
+*.sqlite
+*.sqlite-*
+*.db
+
+# Evolution API / Docker volumes locais
+/evolution_instances/
+/instances/
+
+# fontes de imagem na raiz (já estão em public/demo/)
+/images.jpeg
+/Teto de concreto seco e detalhado.png
+public/demo/resolucao-garagem.png

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Prediza — Demo WhatsApp</title>
+    <style>
+      :root {
+        --wa-bg: #0b141a;
+        --wa-header: #1f2c34;
+        --wa-chat: #0b141a;
+        --wa-in: #1f2c34;
+        --wa-out: #005c4b;
+        --wa-meta: #8696a0;
+        --wa-green: #00a884;
+        --wa-text: #e9edef;
+        --wa-input: #2a3942;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.25rem;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        background: #111;
+        color: #eee;
+      }
+
+      .toolbar {
+        width: min(420px, 100%);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .toolbar p {
+        margin: 0;
+        font-size: 0.85rem;
+        color: #aaa;
+      }
+
+      .toolbar button {
+        border: 0;
+        border-radius: 8px;
+        padding: 0.55rem 1rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        background: #0c5c48;
+        color: #fff;
+      }
+
+      .toolbar button.secondary {
+        background: #333;
+      }
+
+      .toolbar button:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+
+      /* Phone frame */
+      .phone {
+        width: min(390px, 100%);
+        height: min(780px, 92dvh);
+        border-radius: 28px;
+        overflow: hidden;
+        border: 3px solid #2a2a2a;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+        display: flex;
+        flex-direction: column;
+        background: var(--wa-bg);
+      }
+
+      .status-bar {
+        background: var(--wa-header);
+        color: var(--wa-text);
+        font-size: 0.75rem;
+        padding: 0.45rem 1rem 0.2rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header {
+        background: var(--wa-header);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.55rem 0.85rem 0.7rem;
+        color: var(--wa-text);
+      }
+
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #0c5c48, #147a5f);
+        display: grid;
+        place-items: center;
+        font-weight: 700;
+        font-size: 0.85rem;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .header p {
+        margin: 0;
+        font-size: 0.75rem;
+        color: var(--wa-meta);
+      }
+
+      .chat {
+        flex: 1;
+        overflow-y: auto;
+        padding: 0.75rem 0.85rem 1rem;
+        background-color: #0b141a;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 60V0h60' fill='none' stroke='%23ffffff' stroke-opacity='0.03'/%3E%3C/svg%3E");
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+      }
+
+      .day {
+        align-self: center;
+        background: #182229;
+        color: var(--wa-meta);
+        font-size: 0.72rem;
+        padding: 0.25rem 0.65rem;
+        border-radius: 8px;
+        margin: 0.35rem 0 0.5rem;
+      }
+
+      .msg {
+        max-width: 88%;
+        padding: 0.45rem 0.55rem 0.3rem;
+        border-radius: 8px;
+        font-size: 0.92rem;
+        line-height: 1.35;
+        color: var(--wa-text);
+        opacity: 0;
+        transform: translateY(8px);
+        transition: opacity 0.35s ease, transform 0.35s ease;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+
+      .msg.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .msg.in {
+        align-self: flex-start;
+        background: var(--wa-in);
+        border-top-left-radius: 0;
+      }
+
+      .msg.out {
+        align-self: flex-end;
+        background: var(--wa-out);
+        border-top-right-radius: 0;
+      }
+
+      .msg .author {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #53bdeb;
+        margin-bottom: 0.15rem;
+      }
+
+      .msg.bot .author {
+        color: #00a884;
+      }
+
+      .msg .time {
+        display: block;
+        text-align: right;
+        font-size: 0.65rem;
+        color: var(--wa-meta);
+        margin-top: 0.2rem;
+      }
+
+      .msg strong {
+        font-weight: 700;
+      }
+
+      .msg.media {
+        padding: 0.35rem;
+        max-width: 78%;
+      }
+
+      .msg.media img {
+        display: block;
+        width: 100%;
+        max-width: 260px;
+        border-radius: 6px;
+        margin-bottom: 0.35rem;
+      }
+
+      .msg.media .caption {
+        padding: 0 0.25rem 0.1rem;
+        white-space: pre-wrap;
+      }
+
+      .composer {
+        background: var(--wa-header);
+        padding: 0.45rem 0.55rem 0.65rem;
+        display: flex;
+        gap: 0.45rem;
+        align-items: center;
+      }
+
+      .composer .field {
+        flex: 1;
+        background: var(--wa-input);
+        border-radius: 24px;
+        padding: 0.55rem 1rem;
+        color: var(--wa-meta);
+        font-size: 0.9rem;
+      }
+
+      .send {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: var(--wa-green);
+        display: grid;
+        place-items: center;
+        color: #111;
+        font-size: 1.1rem;
+      }
+
+      .hint {
+        width: min(390px, 100%);
+        font-size: 0.8rem;
+        color: #888;
+        text-align: center;
+        line-height: 1.4;
+      }
+
+      .recording .toolbar {
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+      }
+
+      .recording .hint {
+        display: none;
+      }
+
+      .recording body,
+      body.recording {
+        background: #0b141a;
+        padding: 0;
+      }
+
+      body.recording {
+        min-height: 100dvh;
+        justify-content: stretch;
+      }
+
+      body.recording .phone {
+        width: 100%;
+        max-width: none;
+        height: 100dvh;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <p>Demo conversa Prediza</p>
+      <div style="display: flex; gap: 0.4rem">
+        <button type="button" class="secondary" id="btnReset">Reiniciar</button>
+        <button type="button" class="secondary" id="btnRec">Modo gravação</button>
+        <button type="button" id="btnPlay">▶ Reproduzir</button>
+      </div>
+    </div>
+
+    <div class="phone" id="phone">
+      <div class="status-bar">
+        <span>09:41</span>
+        <span>5G · 86%</span>
+      </div>
+      <header class="header">
+        <div class="avatar">P</div>
+        <div>
+          <h1>Grupo Residencial Palmeiras</h1>
+          <p>Ana, Carlos, Prediza, +12</p>
+        </div>
+      </header>
+      <div class="chat" id="chat">
+        <div class="day">Hoje</div>
+      </div>
+      <div class="composer">
+        <div class="field">Mensagem</div>
+        <div class="send" aria-hidden>➤</div>
+      </div>
+    </div>
+
+    <p class="hint">
+      Clique <strong>Reproduzir</strong>, espere 1 s e comece a gravar a tela deste
+      frame. Em <strong>Modo gravação</strong> some a barra e o telefone fica em tela cheia.
+    </p>
+
+    <script>
+      const script = [
+        {
+          side: "in",
+          author: "João (morador)",
+          bot: false,
+          image: "/demo/infiltracao-garagem.jpeg",
+          text: "Olha o teto da garagem, tá pingando perto da tubulação verde",
+          time: "09:41",
+          delay: 1200,
+        },
+        {
+          side: "in",
+          author: "Maria",
+          bot: false,
+          text: "Nossa, de novo? Semana passada já tinha cheiro de mofo",
+          time: "09:42",
+          delay: 1100,
+        },
+        {
+          side: "out",
+          author: "Ana (síndica)",
+          bot: false,
+          text: "@Prediza registrar — infiltração no teto da garagem (foto do João)",
+          time: "09:42",
+          delay: 1400,
+        },
+        {
+          side: "in",
+          author: "Prediza",
+          bot: true,
+          text:
+            "*Prediza* · triagem #12\n\n" +
+            "Classificação: *nova*\n" +
+            "Sugestão: Infiltração no teto da garagem\n" +
+            "Prioridade: *alta*\n" +
+            "Sistema: *Bombas de recalque*\n\n" +
+            "Foto analisada + palavras-chave de umidade\n\n" +
+            "Responda apenas:\n" +
+            "• *Confirmar* — abrir ocorrência\n" +
+            "• *Ignorar* — descartar",
+          time: "09:42",
+          delay: 1800,
+        },
+        {
+          side: "out",
+          author: "Ana (síndica)",
+          bot: false,
+          text: "Confirmar",
+          time: "09:43",
+          delay: 1200,
+        },
+        {
+          side: "in",
+          author: "Prediza",
+          bot: true,
+          text:
+            "Prediza · ocorrência *OC-0003* aberta: Infiltração no teto da garagem\n\n" +
+            "Foto e prazo ficam no app — o grupo só recebeu a confirmação.",
+          time: "09:43",
+          delay: 2000,
+        },
+        {
+          side: "in",
+          author: "Prediza",
+          bot: true,
+          image: "/demo/resolucao-garagem.jpeg",
+          text:
+            "*Prediza* · *OC-0003* *concluída*\n" +
+            "Infiltração no teto da garagem\n\n" +
+            "Equipe selou a junta do teto e validou a área seca. Situação normalizada.\n\n" +
+            "_Atualização oficial — só o fechamento vai ao grupo._",
+          time: "16:20",
+          delay: 1800,
+        },
+        {
+          side: "in",
+          author: "João (morador)",
+          bot: false,
+          text: "Obrigado, Ana! Já melhorou aqui 👍",
+          time: "16:22",
+          delay: 1100,
+        },
+      ];
+
+      const chat = document.getElementById("chat");
+      let playing = false;
+      let timers = [];
+
+      function clearTimers() {
+        timers.forEach(clearTimeout);
+        timers = [];
+      }
+
+      function resetChat() {
+        clearTimers();
+        playing = false;
+        document.getElementById("btnPlay").disabled = false;
+        document.getElementById("btnPlay").textContent = "▶ Reproduzir";
+        chat.innerHTML = '<div class="day">Hoje</div>';
+      }
+
+      /** WhatsApp-like: *negrito* → <strong> */
+      function formatWa(text) {
+        return text
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/\*(.+?)\*/g, "<strong>$1</strong>")
+          .replace(/\n/g, "<br>");
+      }
+
+      function addBubble(item) {
+        const el = document.createElement("div");
+        el.className = `msg ${item.side}${item.bot ? " bot" : ""}${
+          item.image ? " media" : ""
+        }`;
+        let body = "";
+        if (item.image) {
+          body += `<img src="${item.image}" alt="Foto enviada no grupo" />`;
+        }
+        if (item.text) {
+          body += item.image
+            ? `<div class="caption">${formatWa(item.text)}</div>`
+            : formatWa(item.text);
+        }
+        el.innerHTML =
+          `<span class="author">${item.author}</span>` +
+          body +
+          `<span class="time">${item.time}</span>`;
+        chat.appendChild(el);
+        requestAnimationFrame(() => el.classList.add("show"));
+        chat.scrollTop = chat.scrollHeight;
+      }
+
+      function play() {
+        if (playing) return;
+        resetChat();
+        playing = true;
+        document.getElementById("btnPlay").disabled = true;
+        document.getElementById("btnPlay").textContent = "Reproduzindo…";
+
+        let t = 600;
+        script.forEach((item, i) => {
+          const id = setTimeout(() => {
+            addBubble(item);
+            if (i === script.length - 1) {
+              playing = false;
+              document.getElementById("btnPlay").disabled = false;
+              document.getElementById("btnPlay").textContent = "▶ Reproduzir de novo";
+            }
+          }, t);
+          timers.push(id);
+          t += item.delay;
+        });
+      }
+
+      document.getElementById("btnPlay").addEventListener("click", play);
+      document.getElementById("btnReset").addEventListener("click", resetChat);
+      document.getElementById("btnRec").addEventListener("click", () => {
+        document.body.classList.toggle("recording");
+        const on = document.body.classList.contains("recording");
+        document.getElementById("btnRec").textContent = on
+          ? "Sair gravação"
+          : "Modo gravação";
+      });
+
+      // Auto-start hint for first open
+      // play();
+    </script>
+  </body>
+</html>
