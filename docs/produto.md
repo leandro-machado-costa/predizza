@@ -10,7 +10,7 @@
 
 Frases de efeito:
 
-- O mapa do prédio. A previsão das reformas.
+- O modelo do prédio. A previsão das reformas.
 - Chegue na assembleia com o número certo.
 - O grupo continua; a Predizza só guarda o que você confirma.
 
@@ -36,7 +36,7 @@ Informação de manutenção se perde no WhatsApp e na planilha. Troca de síndi
 1. Porta de entrada = **dinheiro e decisão**, não BIM.
 2. Linguagem: **R$ a reservar / risco se adiar** na frente.
 3. WhatsApp: triagem + confirmação; **nunca** dump do grupo.
-4. Mapa/planta = “onde fica”; segundo nível.
+4. Modelo/planta = “onde fica”; segundo nível.
 5. Construtora enche o tanque; síndica dirige.
 
 ## Sucesso de piloto (30 dias)
@@ -47,4 +47,4 @@ Informação de manutenção se perde no WhatsApp e na planilha. Troca de síndi
 
 ## Base histórica
 
-O MVP **Predio360** (Netlify) provou ocorrências no mapa 3D. A Predizza reconstrói em Next.js + SQLite e prioriza previsão + hábito da síndica antes do BIM.
+O MVP **Predio360** (Netlify) provou ocorrências no modelo 3D. A Predizza reconstrói em Next.js + SQLite e prioriza previsão + hábito da síndica antes do BIM.

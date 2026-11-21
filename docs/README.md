@@ -29,7 +29,8 @@
 | [Autenticação](./autenticacao.md) | Sessão |
 | [Desenvolvimento](./desenvolvimento.md) | Setup |
 | [Roadmap](./roadmap.md) | P0–P3 |
-| [Mapa do edifício](./mapa-edificio.md) | Exemplo residencial |
+| [Modelo do edifício](./modelo-edificio.md) | Exemplo residencial (plantas SVG) |
+| [Modelo 3D + localização](./modelo-3d-localizacao.md) | Viewer espacial / GLB / picking |
 | [BIM That Open](./bim-that-open.md) | IFC opcional |
 
 Pitch comercial resumido: [`../README.md`](../README.md).

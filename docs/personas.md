@@ -67,7 +67,7 @@ O celular já é o centro da gestão. Se a Predizza cabe em 2 minutos entre reun
 
 #### 4. Controle sem ser técnica
 Ela não precisa saber ler IFC. Precisa saber se a bomba está atrasada e quanto custa a preventiva.  
-**Pró Predizza:** fichas de sistema com próxima data + custo estimado; mapa como detalhe.  
+**Pró Predizza:** fichas de sistema com próxima data + custo estimado; modelo como detalhe.  
 **Efeito:** sensação de “eu sei o estado do prédio” sem curso de engenharia.
 
 #### 5. Menos WhatsApp como sistema
@@ -119,12 +119,12 @@ Hoje ela monta planilha na mão a cada assembleia.
    *Mensagem:* “Comece pelos 5 sistemas que mais geram surpresa em assembleia.”
 
 3. **Tour só do que importa**  
-   3 tooltips: Decisão → Assembleia → Ocorrência. Nada de mapa 3D no tour.
+   3 tooltips: Decisão → Assembleia → Ocorrência. Nada de modelo 3D no tour.
 
 #### B. Para ela **voltar** (retenção)
 
 4. **Modo síndica (perfil)**  
-   Bottom nav: Decisão, Ocorrências, Assembleia, Mais. Mapa/BIM só dentro de detalhe.  
+   Bottom nav: Decisão, Ocorrências, Assembleia, Mais. Modelo/BIM só dentro de detalhe.  
    *Princípio:* a Ana nunca é obrigada a “pilotar o prédio em 3D”.
 
 5. **Resumo semanal no WhatsApp/e-mail**  
@@ -223,7 +223,7 @@ Ricardo é cobrado quando o síndico reclama e quando a diretoria pergunta “po
 ### Por que **usaria** (prós — detalhado)
 
 #### 1. Diferencial comercial na entrega
-“Vocês entregam o prédio com o mapa e as garantias organizadas” é frase de corretor e de memorial de vendas.  
+“Vocês entregam o prédio com o modelo e as garantias organizadas” é frase de corretor e de memorial de vendas.  
 **Pró Predizza:** wizard de entrega + fichas + documentos.  
 **Efeito:** Predizza vira item de memorial / pós-venda, não só TI.
 
@@ -389,7 +389,7 @@ Construtoras médias querem parecer modernas sem trocar o ERP.
 
 ## Princípio de prioridade
 
-> **Decisão → dados → IA → planta/mapa → BIM.**  
+> **Decisão → dados → IA → planta/modelo → BIM.**  
 > BIM (IFC / That Open) **não é o produto principal**. É detalhe opcional para quem já tem modelo.  
 > **IA vem antes do BIM**, porque Ana e Ricardo ganham valor com triagem e assembleia sem abrir IFC.
 
@@ -433,7 +433,7 @@ Construtoras médias querem parecer modernas sem trocar o ERP.
 “A Predizza mostra o que vence, quanto reservar e onde agir — antes da assembleia, no celular.”
 
 **Para Ricardo**  
-“Entregue o condomínio com a memória do prédio ligada — e acompanhe a garantia no mesmo mapa que o síndico usa.”
+“Entregue o condomínio com a memória do prédio ligada — e acompanhe a garantia no mesmo modelo que o síndico usa.”
 
 **Para os dois**  
 “Um edifício. Dois papéis. Menos WhatsApp. Mais decisão com histórico.”

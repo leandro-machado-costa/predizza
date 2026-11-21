@@ -2,7 +2,7 @@
 
 ## Princípio
 
-**Decisão → dados → IA → planta/mapa → BIM.**
+**Decisão → dados → IA → planta/modelo → BIM.**
 
 - Porta de entrada: home de decisão (síndica) / entrega (construtora).
 - **IA antes do BIM** — triagem e assembleia não dependem de IFC.
@@ -16,7 +16,7 @@
 - [x] Home de decisão (12m / 3a / agir agora)
 - [x] Fichas de sistema
 - [x] Entrega digital da construtora (base)
-- [x] Ocorrências + planta / 3D demo (mapa; BIM não é default)
+- [x] Ocorrências + planta / 3D demo (modelo; BIM não é default)
 - [x] Manutenção preventiva + obras
 - [x] Forecast / relatório de assembleia
 - [x] Viewer IFC experimental (That Open) — disponível, não principal

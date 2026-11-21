@@ -1,4 +1,4 @@
-# Mapa do edifício exemplo
+# Modelo do edifício exemplo
 
 Projeto demo: **Residencial Jardim das Palmeiras**  
 Pasta: [`public/buildings/residencial-palmeiras/`](../public/buildings/residencial-palmeiras/)
@@ -12,7 +12,7 @@ Pasta: [`public/buildings/residencial-palmeiras/`](../public/buildings/residenci
 
 O manifesto (`manifesto.json`) é a fonte de verdade: pavimentos, ambientes e posição dos sistemas.
 
-## Fluxo no `/map`
+## Fluxo no `/modelo`
 
 1. Toggle **Planta** / **3D**
 2. Na planta: escolher pavimento → clicar ambiente ou ponto livre

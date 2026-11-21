@@ -22,7 +22,7 @@ Um usuário tem **membership** em um edifício com um papel.
 
 | Tabela | Função |
 | --- | --- |
-| `systems` | ficha de sistema (categoria, specs, garantia, periodicidade, `next_due_at`, custo, coordenadas mapa) |
+| `systems` | ficha de sistema (categoria, specs, garantia, periodicidade, `next_due_at`, custo, coordenadas do modelo) |
 | `documents` | entrega digital (planta, memorial, manual, garantia…), opcionalmente ligada a um sistema |
 
 ### Operação

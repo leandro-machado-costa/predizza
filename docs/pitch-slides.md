@@ -11,7 +11,7 @@
 
 **Subtítulo:** Chegue na assembleia com o número certo.
 
-**Linha menor:** O mapa do prédio. A previsão das reformas.
+**Linha menor:** O modelo do prédio. A previsão das reformas.
 
 **Rodapé:** Kit de assembleia · memória viva do condomínio
 
@@ -119,7 +119,7 @@
 - `[Nome]` — `[papel]`
 - `[Nome]` — `[papel]`
 
-**Evolução no programa:** Mapa 3D (MVP) → previsão + kit assembleia → agente WhatsApp
+**Evolução no programa:** Modelo 3D (MVP) → previsão + kit assembleia → agente WhatsApp
 
 **Pedido (grande):**  
 Piloto em **1 edifício · 30 dias**  

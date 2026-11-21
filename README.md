@@ -1,15 +1,15 @@
 # Predizza
 
 **Chegue na assembleia com o número certo.**  
-**O mapa do prédio. A previsão das reformas.**
+**O modelo do prédio. A previsão das reformas.**
 
-Predizza é o **kit de assembleia** da síndica: quanto reservar, o que não pode esperar e o que confirmar no WhatsApp — com a memória do prédio viva. A construtora entrega o edifício digitalmente; a síndica decide no celular.
+Predizza é o **kit de assembleia** da síndica: quanto reservar, o que não pode esperar e o que confirmar no WhatsApp — com a memória do prédio viva.
 
 ## Entregáveis do evento
 
 | # | Entregável | Link |
 | --- | --- | --- |
-| 1 | Protótipo / demo do agente | [docs/demo-agente.md](./docs/demo-agente.md) · [vídeo ~86s](./public/demo/predizza-demo.mp4) |
+| 1 | Protótipo / demo do agente | [docs/demo-agente.md](./docs/demo-agente.md) · [vídeo ~169s](./public/demo/predizza-demo.mp4) |
 | 2 | BMC (negócio + impacto) | [docs/bmc.md](./docs/bmc.md) |
 | 3 | Pitch 3 minutos | [docs/pitch-3min.md](./docs/pitch-3min.md) |
 | 4 | Fluxo do agente (abaixo + detalhe) | [docs/agente-fluxo.md](./docs/agente-fluxo.md) |
@@ -89,11 +89,10 @@ npm run dev
 
 Contas demo (senha `predizza123`):
 
-- `sindico@predizza.demo` — síndica (persona Ana)
-- `tecnico@predizza.demo` — técnico
-- `construtora@predizza.demo` — construtora
+- `sindico@predizza.demo` — Ana Oliveira (síndica) · Residencial Jardim das Palmeiras
+- `tecnico@predizza.demo` — Carlos Mendes (zelador / manutenção)
 
-**Demo rápida do agente:** login síndica → Mais → WhatsApp → simular *“Predizza — infiltração na garagem perto da bomba”* → Abrir ocorrência.
+**Demo rápida:** login Ana → Início (kit assembleia) → WhatsApp (portão pendente) → `/whatsapp-demo.html` (infiltração ponta a ponta).
 
 ## Documentação
 
@@ -123,8 +122,8 @@ Manutenção se perde no WhatsApp e na planilha; troca de síndico apaga a memó
 
 ## Estágio atual
 
-App funcional: home kit assembleia, fichas, wizard de entrega, forecast/PDF, triagem IA (foto+texto), agente WhatsApp (Evolution + simulação), planos assistidos, portfólio/lessons (construtora), API `/api/v1/occurrences`.
+App funcional: home kit assembleia, fichas, forecast/PDF, modelo espacial, triagem IA (foto+texto), agente WhatsApp (Evolution + simulação), planos assistidos, API `/api/v1/occurrences`.
 
 ## Naming
 
-**Predizza** = prédio + predição. Predio360 = MVP histórico (mapa 3D).
+**Predizza** = prédio + predição. Predio360 = MVP histórico (modelo 3D).

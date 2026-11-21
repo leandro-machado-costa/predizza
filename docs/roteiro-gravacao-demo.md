@@ -114,7 +114,7 @@ Se precisar **≤ 90 s**, corte o fecho e fale o gancho em 8 s.
 
 - [ ] Assistir **sem som** (legibilidade) e **com som** (ruído)
 - [ ] Cortar inícios/fins mortos (0,5 s de folga)
-- [x] Exportar unificado: [`public/demo/predizza-demo.mp4`](../public/demo/predizza-demo.mp4) (~86 s — agente + WhatsApp)
+- [x] Exportar unificado: [`public/demo/predizza-demo.mp4`](../public/demo/predizza-demo.mp4) (~2 min 49 s — agente + WhatsApp)
 - [ ] Guardar backup do take bruto (gravações cruas na raiz, ignoradas pelo git)
 
 ### Legendas (opcional, mas ajuda banca)

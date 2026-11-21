@@ -42,9 +42,9 @@ src/
     (app)/           # rotas autenticadas (shell + páginas)
       dashboard/     # home de decisão
       systems/       # fichas de sistema
-      delivery/      # entrega digital (construtora)
+      modelo/        # viewer espacial + ocorrência no ponto
       occurrences/   # ocorrências
-      map/           # mapa 3D + registro
+      map/           # modelo 3D + registro
       maintenance/   # preventivo NBR 5674
       works/         # obras NBR 16280
       forecast/      # relatório assembleia
@@ -65,6 +65,8 @@ docs/                # esta documentação
 - Isolamento por `buildingId` da membership do usuário logado.
 - Previsão recalculada por `rebuildForecast(buildingId)` após mudanças em sistemas, planos, obras ou entrega.
 
-## Mapa 3D
+## Modelo 3D (espacial)
 
-[`BuildingMap.tsx`](../src/components/BuildingMap.tsx) renderiza um volume simplificado do edifício e marcadores (sistemas em verde, ocorrências em laranja). Clique no volume define `mapX/Y/Z` para nova ocorrência. Evolução futura: GLB real por `model_versions` (ainda não persistido no schema atual).
+Padrão em `/modelo`: viewer **casa de bonecas** (`src/features/viewer`) + GLB gerado (`npm run gerar-modelo` → `public/modelos/...`). Toque grava localização com IDs persistentes (`loc_*` em `occurrences`). Detalhe: [`modelo-3d-localizacao.md`](./modelo-3d-localizacao.md).
+
+Aba **Torre** ainda usa [`BuildingMap.tsx`](../src/components/BuildingMap.tsx) (volume simplificado). Aba **BIM** = IFC via That Open.

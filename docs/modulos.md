@@ -1,6 +1,6 @@
 # Módulos e rotas
 
-## Mapa de rotas
+## Índice de rotas
 
 | Rota | Módulo | Descrição |
 | --- | --- | --- |
@@ -10,10 +10,9 @@
 | `/systems` | Fichas | Lista de sistemas |
 | `/systems/new` | Fichas | Criar ficha |
 | `/systems/[id]` | Fichas | Detalhe, edição, docs e ocorrências do sistema |
-| `/delivery` | Construtora | Upload lógico de documentos + criar ficha |
 | `/occurrences` | Ocorrências | Lista |
 | `/occurrences/[id]` | Ocorrências | Detalhe, status, timeline |
-| `/map` | Mapa | Viewer 3D + registrar no ponto |
+| `/modelo` | Modelo | Viewer 3D + registrar no ponto do modelo |
 | `/maintenance` | Preventivo | Planos e registro de execução |
 | `/works` | Obras | Cadastro e lista |
 | `/forecast` | Assembleia | Relatório em linguagem simples + buckets |
@@ -24,20 +23,11 @@
 | --- | --- |
 | `actions/auth.ts` | `loginAction`, `logoutAction` |
 | `actions/systems.ts` | `upsertSystemAction` |
-| `actions/delivery.ts` | `deliveryAction` (documento ± criar sistema com defaults) |
 | `actions/occurrences.ts` | `createOccurrenceAction`, `transitionOccurrenceAction` |
 | `actions/maintenance.ts` | `createPlanAction`, `runPlanAction` |
 | `actions/works.ts` | `createWorkAction` |
 
 ## Fluxos principais
-
-### Construtora → mapa
-
-1. Acessa `/delivery`
-2. Registra documento (planta/manual/garantia…)
-3. Opcionalmente marca “Criar ficha de sistema”
-4. Sistema nasce com periodicidade/custo padrão por categoria
-5. `rebuildForecast` atualiza a home e a assembleia
 
 ### Síndico → assembleia
 
@@ -46,9 +36,9 @@
 3. Detalha em `/forecast`
 4. Navega para ficha, obra ou ocorrência conforme o item
 
-### Técnico → ocorrência no mapa
+### Técnico → ocorrência no modelo
 
-1. `/map` → clica no volume → preenche formulário
+1. `/modelo` → clica no volume → preenche formulário
 2. Ocorrência ganha código `OC-XXXX`, prazo pela prioridade
 3. Em `/occurrences/[id]` atualiza status e gera evento
 

@@ -4,7 +4,7 @@
 
 ### Vídeo gravado
 
-[`../public/demo/predizza-demo.mp4`](../public/demo/predizza-demo.mp4) — **~86 s** (app/agente + conversa WhatsApp, juntos)
+[`../public/demo/predizza-demo.mp4`](../public/demo/predizza-demo.mp4) — **~2 min 49 s** (app/agente + conversa WhatsApp, juntos)
 
 **Gravação passo a passo (cliques + fala + cronômetro):** [`roteiro-gravacao-demo.md`](./roteiro-gravacao-demo.md)
 
@@ -18,9 +18,9 @@ npm run db:seed   # se precisar resetar demo
 npm run dev       # http://localhost:3000
 ```
 
-1. Login: `sindico@predizza.demo` / `predizza123`  
-2. Conferir **Início** com valores em R$  
-3. Abrir **Mais → WhatsApp**
+1. Login: `sindico@predizza.demo` / `predizza123` (Ana Oliveira, síndica)  
+2. Conferir **Início** — Residencial Jardim das Palmeiras, reserva 12 meses e OC abertas  
+3. Abrir **Mais → WhatsApp** (há 1 relato pendente do portão; infiltração já confirmada)
 
 ## Roteiro ao vivo (60–70 s)
 

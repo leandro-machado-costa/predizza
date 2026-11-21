@@ -17,15 +17,13 @@ Senha de todas: **`predizza123`**
 | E-mail | Papel | Uso |
 | --- | --- | --- |
 | `sindico@predizza.demo` | síndico | Home de decisão, assembleia |
-| `tecnico@predizza.demo` | técnico | Mapa e ocorrências |
-| `construtora@predizza.demo` | construtora | Entrega digital + pós-obra |
+| `tecnico@predizza.demo` | técnico | Modelo e ocorrências |
 
 Edifício seed: **Residencial Palmeiras** (`slug: palmeiras`).
 
 ## Permissões atuais
 
 - Rotas em `(app)` exigem sessão (senão → `/login`).
-- Entrega digital: `construtora` ou `sindico`.
 - Demais mutações: qualquer usuário autenticado do edifício (MVP).
 
 ### Evolução desejada

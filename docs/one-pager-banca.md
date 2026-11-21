@@ -7,7 +7,7 @@
 # PREDIZZA
 ### Chegue na assembleia com o número certo.
 
-**O mapa do prédio. A previsão das reformas.**  
+**O modelo do prédio. A previsão das reformas.**  
 Kit de assembleia da síndica · memória viva do condomínio
 
 ---
@@ -58,7 +58,7 @@ Manutenção e patologias vivem no **WhatsApp** e na planilha. Troca de síndico
 | `[ ]` | `[ ]` |
 | `[ ]` | `[ ]` |
 
-**Evolução:** MVP mapa 3D → kit assembleia → agente WhatsApp com humano no loop.
+**Evolução:** MVP modelo 3D → kit assembleia → agente WhatsApp com humano no loop.
 
 **Contato:** `[e-mail]` · **Demo:** login `sindico@predizza.demo` · app local / URL do piloto
 

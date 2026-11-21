@@ -39,13 +39,13 @@ Preencha com o que vocês tiverem. Quanto mais primário, melhor.
 | Tipo | O que mostrar | Status |
 | --- | --- | --- |
 | Entrevistas | N síndicas / N construtoras; citação de 1 frase cada | `[ ]` |
-| Observação | Análise do MVP Predio360 (Netlify) — ocorrências no mapa, mas sem previsão/assembleia | Feito (base do repo) |
+| Observação | Análise do MVP Predio360 (Netlify) — ocorrências no modelo, mas sem previsão/assembleia | Feito (base do repo) |
 | Sintoma de mercado | Softwares de condomínio = boleto + ata; manutenção continua no WhatsApp | Argumento |
 | Piloto | 1 edifício · métrica 30 dias: 1 pauta exportada + ≥5 OCs confirmadas do WhatsApp | `[ ]` meta |
 | Dados proxy | Tempo médio montando planilha de assembleia; nº de threads de infiltração/mês | `[ ]` |
 
 **Fala de validação (15 s):**  
-“Falamos com síndicas que montam a assembleia em planilha e perdem o fio no grupo do condomínio. O MVP anterior provou pin no mapa; o que faltava — e o que validamos na Predizza — é **número de reserva + confirmação humana no WhatsApp**.”
+“Falamos com síndicas que montam a assembleia em planilha e perdem o fio no grupo do condomínio. O MVP anterior provou pin no modelo; o que faltava — e o que validamos na Predizza — é **número de reserva + confirmação humana no WhatsApp**.”
 
 Se ainda não houver entrevistas formais: seja honesto — “validação em curso; hipótese priorizada por persona e pelo gap do MVP” — e mostre o **protocolo** de 5 perguntas (abaixo).
 
@@ -155,7 +155,7 @@ Assinatura edifício R$ 200–600/mês · CAC via construtora baixo · churn bai
 
 ### Fala de complementaridade (modelo)
 
-“Somos `[N]` pessoas: quem constrói o produto, quem amarra o agente de IA ao domínio do edifício, e quem abre porta com construtora/síndica. A evolução no programa: de mapa 3D (MVP) → previsão + kit assembleia → agente WhatsApp com confirmação humana.”
+“Somos `[N]` pessoas: quem constrói o produto, quem amarra o agente de IA ao domínio do edifício, e quem abre porta com construtora/síndica. A evolução no programa: de modelo 3D (MVP) → previsão + kit assembleia → agente WhatsApp com confirmação humana.”
 
 ### Evidência de evolução
 
@@ -183,7 +183,7 @@ Assinatura edifício R$ 200–600/mês · CAC via construtora baixo · churn bai
 
 > Em todo condomínio a manutenção mora no WhatsApp e a assembleia decide no escuro. A síndica Ana não quer BIM — ela quer **não passar vergonha** e saber **quanto reservar**.
 >
-> A **Predizza** é o kit de assembleia: o mapa e as fichas do prédio viram **número em reais** — o que reservar em 12 meses e o risco se adiar. A construtora entrega o edifício digitalmente; a síndica só decide.
+> A **Predizza** é o kit de assembleia: o modelo e as fichas do prédio viram **número em reais** — o que reservar em 12 meses e o risco se adiar. A construtora entrega o edifício digitalmente; a síndica só decide.
 >
 > O coração de IA é um **agente no WhatsApp**: a mensagem entra pela Evolution, a Predizza lê o contexto do edifício — sistemas e ocorrências abertas — classifica se é nova, duplicata ou ruído, e **responde pedindo confirmação**. Só depois de CONFIRMAR a ocorrência nasce. Não somos um gravador do grupo: somos memória com consentimento.
 >
