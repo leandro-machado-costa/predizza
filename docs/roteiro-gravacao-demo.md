@@ -114,9 +114,9 @@ Se precisar **≤ 90 s**, corte o fecho e fale o gancho em 8 s.
 
 - [ ] Assistir **sem som** (legibilidade) e **com som** (ruído)
 - [ ] Cortar inícios/fins mortos (0,5 s de folga)
-- [ ] Exportar: `predizza-demo-agente.mp4` (H.264)
-- [ ] Nome sugerido: `Predizza_Demo_Agente_WhatsApp.mp4`
-- [ ] Guardar backup do take bruto
+- [x] Exportar: [`public/demo/predizza-demo-agente.mp4`](../public/demo/predizza-demo-agente.mp4) (~68 s)
+- [x] Clip WhatsApp: [`public/demo/predizza-demo-whatsapp.mp4`](../public/demo/predizza-demo-whatsapp.mp4) (~18 s)
+- [ ] Guardar backup do take bruto (gravações cruas na raiz, ignoradas pelo git)
 
 ### Legendas (opcional, mas ajuda banca)
 

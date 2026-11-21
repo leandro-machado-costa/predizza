@@ -58,3 +58,6 @@ next-env.d.ts
 /images.jpeg
 /Teto de concreto seco e detalhado.png
 public/demo/resolucao-garagem.png
+
+# gravações cruas na raiz (versões finais em public/demo/)
+/Recording_*.mp4

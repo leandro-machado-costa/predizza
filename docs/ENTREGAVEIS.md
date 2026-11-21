@@ -4,7 +4,7 @@ Checklist com links para o material no repositório.
 
 | # | Entregável | Status | Onde está |
 | --- | --- | --- | --- |
-| 1 | **Protótipo funcional do agente de IA** (demo ao vivo ou gravado) | Pronto para demo | [`roteiro-gravacao-demo.md`](./roteiro-gravacao-demo.md) · [`demo-agente.md`](./demo-agente.md) · app `/whatsapp` |
+| 1 | **Protótipo funcional do agente de IA** (demo ao vivo ou gravado) | Pronto + vídeos | [`predizza-demo-agente.mp4`](../public/demo/predizza-demo-agente.mp4) · [`predizza-demo-whatsapp.mp4`](../public/demo/predizza-demo-whatsapp.mp4) · [`demo-agente.md`](./demo-agente.md) · [`roteiro-gravacao-demo.md`](./roteiro-gravacao-demo.md) |
 | 2 | **BMC** do negócio ou impacto social (atualizado) | Documento | [`bmc.md`](./bmc.md) |
 | 3 | **Pitch de 3 minutos** | Script + slides | [`pitch-3min.md`](./pitch-3min.md) · [`pitch-slides.md`](./pitch-slides.md) |
 | 4 | **Documentação do fluxo do agente** (inputs, lógica, outputs) no README | No README + detalhe | [`../README.md`](../README.md) (seção Agente) · [`agente-fluxo.md`](./agente-fluxo.md) |

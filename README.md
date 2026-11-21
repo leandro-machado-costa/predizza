@@ -9,7 +9,7 @@ Predizza é o **kit de assembleia** da síndica: quanto reservar, o que não pod
 
 | # | Entregável | Link |
 | --- | --- | --- |
-| 1 | Protótipo / demo do agente | [docs/demo-agente.md](./docs/demo-agente.md) |
+| 1 | Protótipo / demo do agente | [docs/demo-agente.md](./docs/demo-agente.md) · [vídeo ~68s](./public/demo/predizza-demo-agente.mp4) · [WhatsApp ~18s](./public/demo/predizza-demo-whatsapp.mp4) |
 | 2 | BMC (negócio + impacto) | [docs/bmc.md](./docs/bmc.md) |
 | 3 | Pitch 3 minutos | [docs/pitch-3min.md](./docs/pitch-3min.md) |
 | 4 | Fluxo do agente (abaixo + detalhe) | [docs/agente-fluxo.md](./docs/agente-fluxo.md) |
