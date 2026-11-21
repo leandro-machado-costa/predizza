@@ -5,8 +5,8 @@ import { cookies } from "next/headers";
 import { db } from "@/db";
 import { buildings, memberships, users, type Role } from "@/db/schema";
 
-const COOKIE = "prediza_session";
-const SECRET = process.env.AUTH_SECRET ?? "prediza-dev-secret-change-me";
+const COOKIE = "predizza_session";
+const SECRET = process.env.AUTH_SECRET ?? "predizza-dev-secret-change-me";
 
 export type SessionUser = {
   id: number;

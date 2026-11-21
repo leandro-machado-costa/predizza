@@ -1,4 +1,4 @@
-# Roteiro de gravação — Demo Prediza (agente de IA)
+# Roteiro de gravação — Demo Predizza (agente de IA)
 
 **Duração alvo do vídeo:** 90–120 segundos (máx. 2 min)  
 **Formato:** tela do navegador + sua voz (ou voz em off depois)  
@@ -18,7 +18,7 @@
 ### App
 
 ```bash
-cd /caminho/para/predio360
+cd /caminho/para/predizza
 npm run db:seed    # dados limpos e previsíveis
 npm run dev        # http://localhost:3000
 ```
@@ -28,7 +28,7 @@ npm run dev        # http://localhost:3000
 - [ ] Texto da mensagem já na área de transferência:
 
 ```text
-Prediza — infiltração na garagem perto da bomba, parede úmida
+Predizza — infiltração na garagem perto da bomba, parede úmida
 ```
 
 ### Ferramenta de gravação (escolha uma)
@@ -65,12 +65,12 @@ Se precisar **≤ 90 s**, corte o fecho e fale o gancho em 8 s.
 
 #### 1) Login (0:00–0:15)
 
-1. Tela de login já aberta (conta `sindico@prediza.demo` preenchida).
+1. Tela de login já aberta (conta `sindico@predizza.demo` preenchida).
 2. Clicar **Entrar**.
 3. Esperar o **Início** carregar.
 
 **Fala:**  
-“A Prediza é o kit de assembleia da síndica. Vou mostrar o número certo — e o agente que tira a manutenção do WhatsApp com confirmação humana.”
+“A Predizza é o kit de assembleia da síndica. Vou mostrar o número certo — e o agente que tira a manutenção do WhatsApp com confirmação humana.”
 
 ---
 
@@ -92,7 +92,7 @@ Se precisar **≤ 90 s**, corte o fecho e fale o gancho em 8 s.
 3. Clicar **▶ Reproduzir** e narrar enquanto as bolhas aparecem  
 
 **Fala (durante a animação):**  
-“No grupo, o morador relata a infiltração. A síndica marca a Prediza. O agente tria com o contexto do prédio — classificação nova, prioridade alta — e pede confirmação. Ana responde CONFIRMAR. Só então a ocorrência nasce. Memória com consentimento — não é dump do grupo.”
+“No grupo, o morador relata a infiltração. A síndica marca a Predizza. O agente tria com o contexto do prédio — classificação nova, prioridade alta — e pede confirmação. Ana responde CONFIRMAR. Só então a ocorrência nasce. Memória com consentimento — não é dump do grupo.”
 
 **Alternativa (app real):** Mais → WhatsApp → simular mensagem → Abrir ocorrência (mesmo roteiro de antes).
 
@@ -104,7 +104,7 @@ Se precisar **≤ 90 s**, corte o fecho e fale o gancho em 8 s.
 2. Parar 2 s na home.
 
 **Fala:**  
-“Construtora entrega o prédio digital; a síndica decide. Prediza: assembleia com o número certo.”
+“Construtora entrega o prédio digital; a síndica decide. Predizza: assembleia com o número certo.”
 
 3. Parar a gravação.
 
@@ -114,8 +114,8 @@ Se precisar **≤ 90 s**, corte o fecho e fale o gancho em 8 s.
 
 - [ ] Assistir **sem som** (legibilidade) e **com som** (ruído)
 - [ ] Cortar inícios/fins mortos (0,5 s de folga)
-- [ ] Exportar: `prediza-demo-agente.mp4` (H.264)
-- [ ] Nome sugerido: `Prediza_Demo_Agente_WhatsApp.mp4`
+- [ ] Exportar: `predizza-demo-agente.mp4` (H.264)
+- [ ] Nome sugerido: `Predizza_Demo_Agente_WhatsApp.mp4`
 - [ ] Guardar backup do take bruto
 
 ### Legendas (opcional, mas ajuda banca)
@@ -131,7 +131,7 @@ Faixa curta:
 
 | Problema | Ação |
 | --- | --- |
-| Triagem deu `ignorar` | Usar exatamente o texto com “infiltração” e “bomba”; incluir “Prediza” |
+| Triagem deu `ignorar` | Usar exatamente o texto com “infiltração” e “bomba”; incluir “Predizza” |
 | Deu `duplicata` | `npm run db:seed`, gravar de novo |
 | Tela lenta | Esconder Network do DevTools; fechar abas |
 | Sem voz boa | Gravar só tela e narrar depois no CapCut/DaVinci |
@@ -153,7 +153,7 @@ Só se o WhatsApp já estiver conectado no manager `:8085`:
 
 1. 5 s no manager Evolution  
 2. Mensagem real no celular  
-3. Fila Prediza atualizando  
+3. Fila Predizza atualizando  
 
 **Não misture** no mesmo take se a conexão estiver instável — use o take da simulação como oficial.
 

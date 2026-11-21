@@ -1,4 +1,4 @@
-# Pitch de 3 minutos — Prediza
+# Pitch de 3 minutos — Predizza
 
 **Entregável obrigatório.** Cronometrar. Demo do agente no meio.
 
@@ -15,10 +15,10 @@
 
 > Em todo condomínio a manutenção mora no WhatsApp e a assembleia decide no escuro. A síndica Ana não quer BIM — ela quer **não passar vergonha** e saber **quanto reservar**.
 >
-> A **Prediza** é o kit de assembleia: fichas do prédio viram **reais** — o que reservar em doze meses e o risco se adiar. A construtora entrega o edifício digitalmente; a síndica só decide.
+> A **Predizza** é o kit de assembleia: fichas do prédio viram **reais** — o que reservar em doze meses e o risco se adiar. A construtora entrega o edifício digitalmente; a síndica só decide.
 >
 > *(Demo 60 s — ver docs/demo-agente.md)*  
-> O coração de IA é um **agente no WhatsApp**: a mensagem entra, a Prediza lê o contexto do edifício, classifica se é nova, duplicata ou ruído, e **pede confirmação**. Só depois de confirmar a ocorrência nasce. Não somos gravador do grupo: somos memória com consentimento.
+> O coração de IA é um **agente no WhatsApp**: a mensagem entra, a Predizza lê o contexto do edifício, classifica se é nova, duplicata ou ruído, e **pede confirmação**. Só depois de confirmar a ocorrência nasce. Não somos gravador do grupo: somos memória com consentimento.
 >
 > Diferente de portal de boleto ou CAFM caro, entramos no handover da construtora e expandimos com a administradora. Pedimos um piloto: **um edifício, trinta dias**, uma pauta exportada e relatos confirmados no app.
 

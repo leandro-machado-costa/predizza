@@ -1,9 +1,9 @@
-# API Prediza
+# API Predizza
 
 ## Autenticação
 
-Header `x-api-key: <PREDIZA_API_KEY>` (ou `Authorization: Bearer …`).  
-Se `PREDIZA_API_KEY` não estiver definida, a API fica aberta em desenvolvimento.
+Header `x-api-key: <PREDIZZA_API_KEY>` (ou `Authorization: Bearer …`).  
+Se `PREDIZZA_API_KEY` não estiver definida, a API fica aberta em desenvolvimento.
 
 ## Ocorrências
 

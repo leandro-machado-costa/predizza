@@ -3,7 +3,7 @@ import { getEvolutionConfig, isEvolutionConfigured } from "@/lib/whatsapp/evolut
 import { processWhatsAppInbound } from "@/lib/whatsapp/inbound";
 
 /**
- * Webhook Evolution API (MESSAGES_UPSERT) + JSON simples Prediza.
+ * Webhook Evolution API (MESSAGES_UPSERT) + JSON simples Predizza.
  *
  * Evolution: configure URL → {APP}/api/whatsapp/webhook
  * Header opcional: x-webhook-secret = EVOLUTION_WEBHOOK_SECRET

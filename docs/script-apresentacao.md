@@ -1,8 +1,8 @@
-# Script de apresentação — Prediza
+# Script de apresentação — Predizza
 
 **Duração total:** ~3 minutos  
 **Telas:** app (Início) → HTML WhatsApp → (opcional) OC no app  
-**Antes:** `npm run dev` · login `sindico@prediza.demo` / `prediza123` · abas prontas:
+**Antes:** `npm run dev` · login `sindico@predizza.demo` / `predizza123` · abas prontas:
 
 1. http://localhost:3000/dashboard  
 2. http://localhost:3000/whatsapp-demo.html (Modo gravação já ligado se for vídeo)
@@ -27,7 +27,7 @@
 
 > Bom dia. Em quase todo condomínio a manutenção mora no **WhatsApp** e a assembleia decide **no escuro**.
 >
-> Eu sou da **Prediza**. Nossa persona é a Ana, síndica: ela não quer BIM — ela quer **não passar vergonha** e saber **quanto reservar**.
+> Eu sou da **Predizza**. Nossa persona é a Ana, síndica: ela não quer BIM — ela quer **não passar vergonha** e saber **quanto reservar**.
 
 *(Trocar para a home do app.)*
 
@@ -35,7 +35,7 @@
 
 ### 2. Solução — 0:30 a 0:55
 
-> A Prediza é o **kit de assembleia**: a construtora entrega o prédio digitalmente; a síndica vê, em reais, o que **reservar** nos próximos doze meses e o **risco se adiar**.
+> A Predizza é o **kit de assembleia**: a construtora entrega o prédio digitalmente; a síndica vê, em reais, o que **reservar** nos próximos doze meses e o **risco se adiar**.
 >
 > A memória do prédio fica viva — e o WhatsApp deixa de ser o sistema.
 
@@ -49,7 +49,7 @@ Fale **enquanto** as bolhas aparecem. Não leia a tela palavra por palavra.
 
 > Aqui está o **agente**.  
 > O morador manda a **foto** da infiltração no teto da garagem.  
-> A Ana marca a Prediza.  
+> A Ana marca a Predizza.  
 > O agente usa o contexto do edifício — sistemas e ocorrências abertas — classifica como **nova**, prioridade **alta**, e pede confirmação.  
 > Ana responde só: **Confirmar**.  
 > Aí nasce a ocorrência **OC-0003** — memória com consentimento, não dump do grupo.  
@@ -70,7 +70,7 @@ Fale **enquanto** as bolhas aparecem. Não leia a tela palavra por palavra.
 ### 5. Fecho — 2:45 a 3:00
 
 > Pedimos um piloto: **um edifício, trinta dias** — uma pauta de assembleia exportada e relatos confirmados no app.  
-> Prediza: **chegue na assembleia com o número certo.** Obrigado.
+> Predizza: **chegue na assembleia com o número certo.** Obrigado.
 
 ---
 
@@ -100,7 +100,7 @@ Depois do fecho curto, acrescente:
 | E a LGPD? | Só gravamos o que a síndica confirma. |
 | Por que não ChatGPT puro? | Contexto do edifício no SQLite + heurística própria; LLM é opcional. |
 | Quem paga? | Land na construtora; expand no condomínio/administradora. |
-| E se o grupo for barulhento? | Exigimos menção à Prediza; ruído é classificado como ignorar. |
+| E se o grupo for barulhento? | Exigimos menção à Predizza; ruído é classificado como ignorar. |
 
 ---
 

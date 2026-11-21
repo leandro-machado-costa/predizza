@@ -1,4 +1,4 @@
-# Prediza — Material para avaliação do evento
+# Predizza — Material para avaliação do evento
 
 Critérios: Problema (20%) · Solução/IA (30%) · Diferencial/viabilidade (20%) · Equipe (15%) · Pitch (15%).
 
@@ -28,7 +28,7 @@ A memória de manutenção do condomínio se perde entre WhatsApp, planilha e tr
 Quer: *não passar vergonha*, saber quanto reservar, transformar foto do grupo em tarefa com prazo.  
 Não quer: virar engenheira nem cadastrar BIM.
 
-**Ricardo** (secundário / canal) — engenheiro da construtora. Entrega digital + lê pós-obra. Distribui a Prediza no handover.
+**Ricardo** (secundário / canal) — engenheiro da construtora. Entrega digital + lê pós-obra. Distribui a Predizza no handover.
 
 Detalhe: [`personas.md`](./personas.md).
 
@@ -45,7 +45,7 @@ Preencha com o que vocês tiverem. Quanto mais primário, melhor.
 | Dados proxy | Tempo médio montando planilha de assembleia; nº de threads de infiltração/mês | `[ ]` |
 
 **Fala de validação (15 s):**  
-“Falamos com síndicas que montam a assembleia em planilha e perdem o fio no grupo do condomínio. O MVP anterior provou pin no mapa; o que faltava — e o que validamos na Prediza — é **número de reserva + confirmação humana no WhatsApp**.”
+“Falamos com síndicas que montam a assembleia em planilha e perdem o fio no grupo do condomínio. O MVP anterior provou pin no mapa; o que faltava — e o que validamos na Predizza — é **número de reserva + confirmação humana no WhatsApp**.”
 
 Se ainda não houver entrevistas formais: seja honesto — “validação em curso; hipótese priorizada por persona e pelo gap do MVP” — e mostre o **protocolo** de 5 perguntas (abaixo).
 
@@ -75,7 +75,7 @@ Construtora enche o tanque (wizard de entrega). Síndica dirige (R$ a reservar, 
 | Assembleia | Gera pauta em linguagem simples a partir do forecast | Exporta PDF / cola no conselho |
 | Planos | Sugere preventivas faltantes + alerta de padrão repetido | Síndica/técnico aplica |
 
-**Princípio LGPD:** a Prediza **não** é gravador do grupo. Ativo = memória **confirmada**.
+**Princípio LGPD:** a Predizza **não** é gravador do grupo. Ativo = memória **confirmada**.
 
 ### Profundidade de engenharia (o que falar)
 
@@ -95,7 +95,7 @@ flowchart LR
   ctx --> triage
   triage --> reply[Resposta_no_grupo]
   reply --> human{Humano_confirma}
-  human -->|CONFIRMAR| occ[Ocorrencia_Prediza]
+  human -->|CONFIRMAR| occ[Ocorrencia_Predizza]
   human -->|VINCULAR| link[Comentario_em_OC]
   human -->|IGNORAR| drop[Nao_grava]
 ```
@@ -114,7 +114,7 @@ flowchart LR
 
 ### Vantagem vs alternativas
 
-| Alternativa | Limitação | Prediza |
+| Alternativa | Limitação | Predizza |
 | --- | --- | --- |
 | Grupo WhatsApp | Ruído, sem prazo, sem custo | Fila + confirmação + OC |
 | Planilha da síndica | Morre na troca de mandato | Histórico no edifício |
@@ -128,7 +128,7 @@ flowchart LR
 
 | Camada | Quem paga | O quê |
 | --- | --- | --- |
-| **Land** | Construtora | Prediza no pacote de entrega (1º ano / N unidades) |
+| **Land** | Construtora | Predizza no pacote de entrega (1º ano / N unidades) |
 | **Expand** | Administradora / condomínio | Assinatura anual por edifício (síndica + técnico) |
 | **Upsell** | Construtora | Portfólio pós-obra + lessons learned |
 
@@ -159,7 +159,7 @@ Assinatura edifício R$ 200–600/mês · CAC via construtora baixo · churn bai
 
 ### Evidência de evolução
 
-1. Pitch e naming Prediza  
+1. Pitch e naming Predizza  
 2. App Next.js + SQLite (decisão, fichas, forecast)  
 3. IA + Evolution (agente no grupo)  
 4. Reposicionamento: **síndica primeiro**, construtora como canal  
@@ -183,16 +183,16 @@ Assinatura edifício R$ 200–600/mês · CAC via construtora baixo · churn bai
 
 > Em todo condomínio a manutenção mora no WhatsApp e a assembleia decide no escuro. A síndica Ana não quer BIM — ela quer **não passar vergonha** e saber **quanto reservar**.
 >
-> A **Prediza** é o kit de assembleia: o mapa e as fichas do prédio viram **número em reais** — o que reservar em 12 meses e o risco se adiar. A construtora entrega o edifício digitalmente; a síndica só decide.
+> A **Predizza** é o kit de assembleia: o mapa e as fichas do prédio viram **número em reais** — o que reservar em 12 meses e o risco se adiar. A construtora entrega o edifício digitalmente; a síndica só decide.
 >
-> O coração de IA é um **agente no WhatsApp**: a mensagem entra pela Evolution, a Prediza lê o contexto do edifício — sistemas e ocorrências abertas — classifica se é nova, duplicata ou ruído, e **responde pedindo confirmação**. Só depois de CONFIRMAR a ocorrência nasce. Não somos um gravador do grupo: somos memória com consentimento.
+> O coração de IA é um **agente no WhatsApp**: a mensagem entra pela Evolution, a Predizza lê o contexto do edifício — sistemas e ocorrências abertas — classifica se é nova, duplicata ou ruído, e **responde pedindo confirmação**. Só depois de CONFIRMAR a ocorrência nasce. Não somos um gravador do grupo: somos memória com consentimento.
 >
 > Diferente de portal de boleto ou CAFM caro, vendemos no handover e expandimos com a administradora. Pedimos um piloto: um edifício, trinta dias, uma pauta exportada e relatos confirmados no app.
 
 ### Demo do agente (60–70 s) — ordem na tela
 
 1. **Início** — mostrar “Reservar (12 meses)” + “Risco se adiar”.  
-2. **WhatsApp** — simular: *“Prediza — infiltração na garagem perto da bomba”*.  
+2. **WhatsApp** — simular: *“Predizza — infiltração na garagem perto da bomba”*.  
 3. Mostrar triagem (classificação / sistema / prioridade).  
 4. **CONFIRMAR** → ocorrência criada.  
 5. Voltar ao **Início** ou **Assembleia** — número atualizado / item na pauta.  
@@ -201,7 +201,7 @@ Assinatura edifício R$ 200–600/mês · CAC via construtora baixo · churn bai
 ### Checklist técnico antes do pitch
 
 - [ ] `npm run dev` + seed  
-- [ ] Login `sindico@prediza.demo` / `prediza123`  
+- [ ] Login `sindico@predizza.demo` / `predizza123`  
 - [ ] Simulação WhatsApp testada  
 - [ ] Backup: print da pauta `/forecast/print`  
 - [ ] Se Evolution cair: demo só com simulação (mesmo agente)

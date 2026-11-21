@@ -89,7 +89,7 @@ export async function resolveWhatsAppEvent(opts: {
     if (replyJid) {
       await evolutionSendText({
         number: replyJid,
-        text: `Prediza · #${opts.eventId} ignorado.`,
+        text: `Predizza · #${opts.eventId} ignorado.`,
         instance,
       });
     }
@@ -120,7 +120,7 @@ export async function resolveWhatsAppEvent(opts: {
     if (replyJid) {
       await evolutionSendText({
         number: replyJid,
-        text: `Prediza · vinculado a ${occ?.code ?? event.matchedOccurrenceId}.`,
+        text: `Predizza · vinculado a ${occ?.code ?? event.matchedOccurrenceId}.`,
         instance,
       });
     }
@@ -174,7 +174,7 @@ export async function resolveWhatsAppEvent(opts: {
   if (replyJid) {
     await evolutionSendText({
       number: replyJid,
-      text: `Prediza · ocorrência *${occ.code}* aberta: ${occ.title}`,
+      text: `Predizza · ocorrência *${occ.code}* aberta: ${occ.title}`,
       instance,
     });
   }
@@ -317,7 +317,7 @@ export async function processWhatsAppInbound(
     if (inbound.remoteJid && !opts?.skipReply) {
       await evolutionSendText({
         number: inbound.remoteJid,
-        text: `Prediza · já existe triagem #${dup.id} (${dup.status}). Responda *Confirmar* ou *Ignorar*.`,
+        text: `Predizza · já existe triagem #${dup.id} (${dup.status}). Responda *Confirmar* ou *Ignorar*.`,
         instance: inbound.instance || undefined,
       });
     }
@@ -395,7 +395,7 @@ export async function processWhatsAppInbound(
   if (inbound.remoteJid && !opts?.skipReply) {
     const text =
       status === "ignored"
-        ? `Prediza · mensagem classificada como ruído (não gravada).\n_${triage.rationale}_`
+        ? `Predizza · mensagem classificada como ruído (não gravada).\n_${triage.rationale}_`
         : buildTriageReply({
             eventId: row.id,
             classification: triage.classification,

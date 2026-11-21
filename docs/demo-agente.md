@@ -9,12 +9,12 @@
 ## Preparação (2 min)
 
 ```bash
-cd /home/leandro/devs/predio360
+cd /home/leandro/devs/predizza
 npm run db:seed   # se precisar resetar demo
 npm run dev       # http://localhost:3000
 ```
 
-1. Login: `sindico@prediza.demo` / `prediza123`  
+1. Login: `sindico@predizza.demo` / `predizza123`  
 2. Conferir **Início** com valores em R$  
 3. Abrir **Mais → WhatsApp**
 
@@ -23,7 +23,7 @@ npm run dev       # http://localhost:3000
 | # | Tela | Ação | O que dizer |
 | --- | --- | --- | --- |
 | 1 | Início | Mostrar “Reservar” e “Risco se adiar” | “A síndica vê o número da assembleia” |
-| 2 | WhatsApp | Colar: `Prediza — infiltração na garagem perto da bomba` → Enviar | “O agente recebe o relato” |
+| 2 | WhatsApp | Colar: `Predizza — infiltração na garagem perto da bomba` → Enviar | “O agente recebe o relato” |
 | 3 | Evento | Mostrar classificação / prioridade | “Nova vs duplicata vs ruído, com contexto do prédio” |
 | 4 | Confirmar | **Abrir ocorrência** | “Só grava com humano no loop” |
 | 5 | Ocorrência / Início | Mostrar OC criada | “Memória confirmada — não é dump do grupo” |

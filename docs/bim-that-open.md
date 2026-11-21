@@ -25,7 +25,7 @@ WASM em `public/wasm/` (`web-ifc.wasm`, `web-ifc-mt.wasm`).
 ### Next.js / bundler
 
 - Dev/build com **webpack** (`next dev --webpack`) — Turbopack quebra nos exports WebGPU do Three usados pelo Fragments.
-- Shim [`src/lib/three-prediza.js`](../src/lib/three-prediza.js) aliasado em `three$` para expor `MRTNode` / `TSL` / `WebGPURenderer`.
+- Shim [`src/lib/three-predizza.js`](../src/lib/three-predizza.js) aliasado em `three$` para expor `MRTNode` / `TSL` / `WebGPURenderer`.
 
 ## Onde está no app
 

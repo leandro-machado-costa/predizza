@@ -8,9 +8,9 @@
 - **IA antes do BIM** — triagem e assembleia não dependem de IFC.
 - BIM (That Open) é **secundário e opcional**.
 
-## Já entregue (base Prediza)
+## Já entregue (base Predizza)
 
-- [x] Pitch e naming Prediza
+- [x] Pitch e naming Predizza
 - [x] Next.js + React + SQLite + Drizzle
 - [x] Auth por papel + seed
 - [x] Home de decisão (12m / 3a / agir agora)

@@ -49,7 +49,7 @@ export default async function AcceptInvitePage({
                 className={inputClass}
                 name="password"
                 type="password"
-                defaultValue="prediza123"
+                defaultValue="predizza123"
               />
             </Field>
             <PrimaryButton type="submit">Criar acesso e ir ao login</PrimaryButton>

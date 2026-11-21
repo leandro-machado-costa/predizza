@@ -1,4 +1,4 @@
-# Business Model Canvas — Prediza
+# Business Model Canvas — Predizza
 
 **Versão:** atualizada para o evento (kit de assembleia + agente WhatsApp)  
 **Tipo:** negócio B2B2C (construtora → condomínio) com impacto social na gestão residencial
@@ -21,7 +21,7 @@
 
 ## 3. Recursos-chave
 
-- Software Prediza (Next.js + SQLite)
+- Software Predizza (Next.js + SQLite)
 - Motor de triagem próprio (heurística + LLM opcional)
 - Memória do edifício (fichas, OCs, planos)
 - Relação com construtoras no momento da entrega
@@ -46,7 +46,7 @@
 
 ## 6. Canais
 
-- Construtora (land) — Prediza no pacote de entrega
+- Construtora (land) — Predizza no pacote de entrega
 - Administradora (expand) — carteira de condomínios
 - Boca a boca entre síndicas / conselho
 - Demo e pitch (AKCIT / eventos)

@@ -18,7 +18,7 @@ export default async function LoginPage({
         }}
       />
       <div className="relative mx-auto hidden w-full max-w-6xl flex-1 px-6 pt-16 sm:block">
-        <p className="display text-5xl text-white md:text-6xl">Prediza</p>
+        <p className="display text-5xl text-white md:text-6xl">Predizza</p>
         <p className="mt-3 max-w-md text-lg text-white/85">
           O mapa do prédio. A previsão das reformas.
         </p>
@@ -26,7 +26,7 @@ export default async function LoginPage({
 
       <div className="relative mx-auto w-full max-w-md px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-10 sm:pb-12">
         <div className="animate-fade-up rounded-[var(--radius-xl)] border border-line/40 bg-card/95 p-6 elev-3 sm:p-8">
-          <p className="brand-mark text-3xl sm:hidden">Prediza</p>
+          <p className="brand-mark text-3xl sm:hidden">Predizza</p>
           <p className="mt-1 text-sm text-muted sm:mt-0 sm:text-base">
             Entre para decidir o que reservar e onde agir.
           </p>
@@ -42,7 +42,7 @@ export default async function LoginPage({
                 name="email"
                 type="email"
                 autoComplete="username"
-                defaultValue="sindico@prediza.demo"
+                defaultValue="sindico@predizza.demo"
                 required
               />
             </Field>
@@ -52,7 +52,7 @@ export default async function LoginPage({
                 name="password"
                 type="password"
                 autoComplete="current-password"
-                defaultValue="prediza123"
+                defaultValue="predizza123"
                 required
               />
             </Field>
@@ -67,9 +67,9 @@ export default async function LoginPage({
           </form>
           <div className="mt-6 space-y-1 rounded-[var(--radius-md)] border border-line/50 bg-surface-2/60 p-3.5 text-xs text-muted">
             <p className="font-semibold text-foreground/80">Contas demo</p>
-            <p>sindico@prediza.demo</p>
-            <p>tecnico@prediza.demo · construtora@prediza.demo</p>
-            <p>Senha: prediza123</p>
+            <p>sindico@predizza.demo</p>
+            <p>tecnico@predizza.demo · construtora@predizza.demo</p>
+            <p>Senha: predizza123</p>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
-# Prediza
+# Predizza
 
 **Chegue na assembleia com o número certo.**  
 **O mapa do prédio. A previsão das reformas.**
 
-Prediza é o **kit de assembleia** da síndica: quanto reservar, o que não pode esperar e o que confirmar no WhatsApp — com a memória do prédio viva. A construtora entrega o edifício digitalmente; a síndica decide no celular.
+Predizza é o **kit de assembleia** da síndica: quanto reservar, o que não pode esperar e o que confirmar no WhatsApp — com a memória do prédio viva. A construtora entrega o edifício digitalmente; a síndica decide no celular.
 
 ## Entregáveis do evento
 
@@ -39,7 +39,7 @@ O agente **não grava o grupo inteiro**. Ele tria relatos de manutenção com co
  Humano: CONFIRMAR | VINCULAR | IGNORAR
       │
       ▼
- Ocorrência na Prediza (ou descarte)
+ Ocorrência na Predizza (ou descarte)
 ```
 
 ### Inputs
@@ -52,7 +52,7 @@ O agente **não grava o grupo inteiro**. Ele tria relatos de manutenção com co
 
 ### Lógica
 
-1. Filtra ruído / exige menção opcional (`@Prediza`)  
+1. Filtra ruído / exige menção opcional (`@Predizza`)  
 2. Classifica com keywords + match de duplicata nas OCs abertas  
 3. Sugere sistema, prioridade, título e rationale  
 4. **Gate humano** antes de persistir ocorrência definitiva  
@@ -87,13 +87,13 @@ npm run db:seed
 npm run dev
 ```
 
-Contas demo (senha `prediza123`):
+Contas demo (senha `predizza123`):
 
-- `sindico@prediza.demo` — síndica (persona Ana)
-- `tecnico@prediza.demo` — técnico
-- `construtora@prediza.demo` — construtora
+- `sindico@predizza.demo` — síndica (persona Ana)
+- `tecnico@predizza.demo` — técnico
+- `construtora@predizza.demo` — construtora
 
-**Demo rápida do agente:** login síndica → Mais → WhatsApp → simular *“Prediza — infiltração na garagem perto da bomba”* → Abrir ocorrência.
+**Demo rápida do agente:** login síndica → Mais → WhatsApp → simular *“Predizza — infiltração na garagem perto da bomba”* → Abrir ocorrência.
 
 ## Documentação
 
@@ -114,7 +114,7 @@ Manutenção se perde no WhatsApp e na planilha; troca de síndico apaga a memó
 
 ## Diferencial
 
-| Alternativa | Prediza |
+| Alternativa | Predizza |
 | --- | --- |
 | Grupo WhatsApp | Fila + confirmação + OC |
 | Planilha | Memória no edifício |
@@ -127,4 +127,4 @@ App funcional: home kit assembleia, fichas, wizard de entrega, forecast/PDF, tri
 
 ## Naming
 
-**Prediza** = prédio + predição. Predio360 = MVP histórico (mapa 3D).
+**Predizza** = prédio + predição. Predio360 = MVP histórico (mapa 3D).

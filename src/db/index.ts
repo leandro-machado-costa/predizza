@@ -6,7 +6,7 @@ import * as schema from "./schema";
 
 const dbPath =
   process.env.DATABASE_URL ??
-  path.join(process.cwd(), "data", "prediza.sqlite");
+  path.join(process.cwd(), "data", "predizza.sqlite");
 
 fs.mkdirSync(path.dirname(dbPath), { recursive: true });
 

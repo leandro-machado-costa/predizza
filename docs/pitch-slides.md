@@ -1,4 +1,4 @@
-# Prediza — 8 slides (copiar para Canva / Google Slides)
+# Predizza — 8 slides (copiar para Canva / Google Slides)
 
 **Formato sugerido:** 16:9 · fundo claro pedra `#EEF1EE` · acento verde `#0C5C48` · título em serif/display · corpo sans.  
 **Tempo total do pitch:** 3 min (slides 1–4 fala; 5–6 demo; 7–8 fecho).
@@ -7,7 +7,7 @@
 
 ## Slide 1 — Capa
 
-**Título (grande):** Prediza
+**Título (grande):** Predizza
 
 **Subtítulo:** Chegue na assembleia com o número certo.
 
@@ -15,7 +15,7 @@
 
 **Rodapé:** Kit de assembleia · memória viva do condomínio
 
-*Visual:* marca Prediza + silhueta simples de edifício / grade de planta (sem foto stock genérica de “tech”).
+*Visual:* marca Predizza + silhueta simples de edifício / grade de planta (sem foto stock genérica de “tech”).
 
 ---
 
@@ -56,7 +56,7 @@
 
 **Fluxo horizontal (3 caixas):**
 1. **Construtora entrega** → wizard (plantas, garantias, sistemas)
-2. **Prediza calcula** → reservar 12 meses · risco se adiar
+2. **Predizza calcula** → reservar 12 meses · risco se adiar
 3. **Síndica decide** → pauta, PDF, WhatsApp do conselho
 
 **Uma linha:** Construtora enche o tanque. Síndica dirige.
@@ -86,7 +86,7 @@
 **Checklist na tela (marcar ao vivo):**
 1. Início — R$ a reservar / risco se adiar  
 2. WhatsApp — relato de manutenção  
-3. Confirmar → ocorrência na Prediza  
+3. Confirmar → ocorrência na Predizza  
 4. Assembleia — número e pauta  
 
 **Nota do apresentador:** “Com Evolution, o mesmo fluxo roda no grupo real.”
@@ -99,7 +99,7 @@
 
 **Tabela rápida:**
 
-| Alternativa | Gap | Prediza |
+| Alternativa | Gap | Predizza |
 | --- | --- | --- |
 | Grupo WhatsApp | Ruído, sem custo | Confirmação + OC |
 | Planilha | Morre no mandato | Memória no edifício |
@@ -132,6 +132,6 @@ Sucesso = 1 pauta exportada + ≥5 relatos confirmados
 ## Notas de design (evitar cara de “IA genérica”)
 
 - Evitar roxo, glow, pills demais, fundo cream + terracota
-- Preferir verde Prediza + cinza pedra + tipografia com personalidade
+- Preferir verde Predizza + cinza pedra + tipografia com personalidade
 - No máximo 1 diagrama por slide; pouco texto
 - Slide 6 pode ser só título + checklist — a tela do app é o visual

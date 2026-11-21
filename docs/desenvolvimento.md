@@ -8,7 +8,7 @@
 ## Setup
 
 ```bash
-cd /home/leandro/devs/predio360
+cd /home/leandro/devs/predizza
 npm install
 npm run db:push    # cria data/ e aplica schema
 npm run db:seed    # condomínio + usuários + dados demo
@@ -32,7 +32,7 @@ npm run dev        # http://localhost:3000
 Crie `.env.local`:
 
 ```env
-DATABASE_URL=./data/prediza.sqlite
+DATABASE_URL=./data/predizza.sqlite
 AUTH_SECRET=troque-em-producao
 ```
 

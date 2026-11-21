@@ -99,7 +99,7 @@ export default async function DigestPage({
   );
   const internalCost = allOcc.reduce((a, o) => a + (o.internalCost ?? 0), 0);
 
-  const digestText = `Prediza · ${session.buildingName}
+  const digestText = `Predizza · ${session.buildingName}
 Semana ${weekLabel}
 
 • Reservar agora: ${formatBRL(sum)} (${actNow.length} itens)

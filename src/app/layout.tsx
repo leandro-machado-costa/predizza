@@ -15,7 +15,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Prediza",
+  title: "Predizza",
   description: "O mapa do prédio. A previsão das reformas.",
 };
 

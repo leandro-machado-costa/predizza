@@ -1,4 +1,4 @@
-# Documentação Prediza
+# Documentação Predizza
 
 ## Entregáveis do evento
 

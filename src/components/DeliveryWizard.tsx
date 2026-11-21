@@ -35,7 +35,7 @@ export function DeliveryWizard() {
         ))}
       </div>
       <p className="text-sm text-muted">
-        Passo {step} de 3 — Wizard de entrega Prediza
+        Passo {step} de 3 — Wizard de entrega Predizza
       </p>
 
       <form action={runDeliveryWizardAction} className="space-y-4">

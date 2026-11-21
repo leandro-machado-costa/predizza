@@ -8,7 +8,7 @@ export type EvolutionConfig = {
   apiKey: string;
   instance: string;
   webhookSecret: string | null;
-  /** Se true, só processa mensagens com @prediza / prediza / #ocorrencia */
+  /** Se true, só processa mensagens com @predizza / predizza / #ocorrencia */
   requireMention: boolean;
   defaultBuildingSlug: string | null;
   /** JSON opcional: { "minha-instancia": "palmeiras" } */
@@ -88,12 +88,12 @@ function extractText(message: Record<string, unknown> | undefined): string {
   return "";
 }
 
-/** Detecta payload Evolution (messages.upsert) ou JSON simples da Prediza */
+/** Detecta payload Evolution (messages.upsert) ou JSON simples da Predizza */
 export function parseInboundPayload(raw: unknown): ParsedInbound | null {
   if (!raw || typeof raw !== "object") return null;
   const p = raw as Record<string, unknown>;
 
-  // Formato simples Prediza
+  // Formato simples Predizza
   if (typeof p.body === "string" && (p.buildingSlug || p.instance)) {
     return {
       kind: "simple",
@@ -159,6 +159,8 @@ export function shouldProcessText(body: string, requireMention: boolean) {
   if (!requireMention) return true;
   const n = body.toLowerCase().normalize("NFD").replace(/\p{M}/gu, "");
   return (
+    n.includes("@predizza") ||
+    n.includes("predizza") ||
     n.includes("@prediza") ||
     n.includes("prediza") ||
     n.includes("#ocorrencia") ||
@@ -175,11 +177,11 @@ export function parseConfirmCommand(
 ): { action: "create" | "link" | "ignore"; eventId: number | null } | null {
   const t = body.trim();
   const withId =
-    /^(?:prediza\s+)?(confirmar|criar|ok|1|vincular|2|ignorar|x|3)\s*[#:]?\s*(\d+)\s*$/i.exec(
+    /^(?:predizz?a\s+)?(confirmar|criar|ok|1|vincular|2|ignorar|x|3)\s*[#:]?\s*(\d+)\s*$/i.exec(
       t,
     );
   const bare =
-    /^(?:prediza\s+)?(confirmar|criar|ok|vincular|ignorar|sim|nao|não)\s*!?\s*$/i.exec(
+    /^(?:predizz?a\s+)?(confirmar|criar|ok|vincular|ignorar|sim|nao|não)\s*!?\s*$/i.exec(
       t,
     );
   const m = withId || bare;
@@ -253,7 +255,7 @@ export function buildTriageReply(opts: {
   rationale: string;
 }) {
   const lines = [
-    `*Prediza* · triagem #${opts.eventId}`,
+    `*Predizza* · triagem #${opts.eventId}`,
     "",
     `Classificação: *${opts.classification}*`,
     `Sugestão: ${opts.title}`,

@@ -164,11 +164,11 @@ export async function resolveAndNotifyAction(formData: FormData) {
     );
     if (isEvolutionConfigured()) {
       const text = [
-        `*Prediza* · ${occ.code} *concluída*`,
+        `*Predizza* · ${occ.code} *concluída*`,
         occ.title,
         "",
         resolutionNote,
-        photoPath ? `(Foto do serviço no app Prediza)` : null,
+        photoPath ? `(Foto do serviço no app Predizza)` : null,
         "",
         "_Atualização oficial — só o fechamento vai ao grupo._",
       ]

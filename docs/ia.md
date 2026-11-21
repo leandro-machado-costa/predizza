@@ -1,4 +1,4 @@
-# IA na Prediza
+# IA na Predizza
 
 ## Princípio
 
@@ -14,16 +14,16 @@ Faz sentido como **captura**, não como gravador do grupo.
 
 Bot no grupo do condomínio que:
 
-1. Detecta mensagem/foto com cara de manutenção (ou comando `@Prediza registrar`).
+1. Detecta mensagem/foto com cara de manutenção (ou comando `@Predizza registrar`).
 2. Classifica **ocorrência nova** vs **duplicata** (OC aberta no mesmo edifício: sistema/local/texto parecido).
 3. Responde no grupo com card: *Confirmar nova / Vincular à OC-… / Ignorar*.
-4. **Só grava na Prediza** se síndica/zelador confirmar.
+4. **Só grava na Predizza** se síndica/zelador confirmar.
 
 ### O que não é
 
 - Escutar e arquivar **tudo** do grupo (festa, ofensa, ruído).
 - Criar ocorrência sozinho a cada mensagem.
-- Substituir o grupo — o grupo continua; a Prediza guarda só manutenção confirmada.
+- Substituir o grupo — o grupo continua; a Predizza guarda só manutenção confirmada.
 
 ### Por quê (personas)
 

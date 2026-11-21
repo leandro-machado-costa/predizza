@@ -1,7 +1,7 @@
-# Personas Prediza
+# Personas Predizza
 
 Duas personas-âncora para desenhar produto, UX, mensagem comercial e roadmap.  
-Tudo abaixo serve para responder: **por que alguém abre a Prediza de novo na semana seguinte** — e o que falta para isso acontecer.
+Tudo abaixo serve para responder: **por que alguém abre a Predizza de novo na semana seguinte** — e o que falta para isso acontecer.
 
 ---
 
@@ -39,7 +39,7 @@ Ana não quer virar engenheira. Ela quer **não passar vergonha na assembleia**,
 - Softwares de condomínio que ela viu são “boleto + ata”, não manutenção.
 - Cada fornecedor fala uma língua; ela não consegue comparar orçamentos com o mesmo escopo.
 
-### Como usa a Prediza (jornada ideal)
+### Como usa a Predizza (jornada ideal)
 
 1. Celular → **Decisão** (“agir agora” / 12 meses).
 2. **Assembleia** para montar pauta de reserva e copiar/enviar ao conselho.
@@ -52,49 +52,49 @@ Ana não quer virar engenheira. Ela quer **não passar vergonha na assembleia**,
 
 #### 1. Segurança política na assembleia
 A Ana é julgada em público. Se ela mostra “próximos 12 meses: R$ X” e “agir agora: Y itens”, a discussão muda de opinião para **prioridade**.  
-**Pró Prediza:** home de decisão + relatório de assembleia em linguagem simples.  
+**Pró Predizza:** home de decisão + relatório de assembleia em linguagem simples.  
 **Efeito:** menos grito, mais aprovação de fundo/reserva.
 
 #### 2. Memória do prédio que sobrevive a ela
 No fim do mandato ela quer deixar o condomínio melhor — ou pelo menos documentado.  
-**Pró Prediza:** histórico preso ao sistema/local (ocorrência, manutenção, obra).  
+**Pró Predizza:** histórico preso ao sistema/local (ocorrência, manutenção, obra).  
 **Efeito:** próximo síndico não “recomeça do zero”; o conselho vê continuidade.
 
 #### 3. Menos ansiedade no dia a dia
-O celular já é o centro da gestão. Se a Prediza cabe em 2 minutos entre reuniões, ela entra.  
-**Pró Prediza:** mobile-first, bottom nav, KPIs em carrossel, toques grandes.  
+O celular já é o centro da gestão. Se a Predizza cabe em 2 minutos entre reuniões, ela entra.  
+**Pró Predizza:** mobile-first, bottom nav, KPIs em carrossel, toques grandes.  
 **Efeito:** uso contínuo, não só na véspera da assembleia.
 
 #### 4. Controle sem ser técnica
 Ela não precisa saber ler IFC. Precisa saber se a bomba está atrasada e quanto custa a preventiva.  
-**Pró Prediza:** fichas de sistema com próxima data + custo estimado; mapa como detalhe.  
+**Pró Predizza:** fichas de sistema com próxima data + custo estimado; mapa como detalhe.  
 **Efeito:** sensação de “eu sei o estado do prédio” sem curso de engenharia.
 
 #### 5. Menos WhatsApp como sistema
 Grupo do condomínio mistura festa junina com infiltração.  
-**Pró Prediza:** ocorrência com status, prazo, responsável, histórico.  
-**Efeito:** ela responde “está na Prediza, prazo dia X” em vez de reabrir a thread.
+**Pró Predizza:** ocorrência com status, prazo, responsável, histórico.  
+**Efeito:** ela responde “está na Predizza, prazo dia X” em vez de reabrir a thread.
 
 #### 6. Transparência seletiva (aliada, não inimiga)
 Moradores pedem transparência; ela teme linchamento.  
-**Pró Prediza:** papéis (síndico, conselho, técnico) com o que cada um vê.  
+**Pró Predizza:** papéis (síndico, conselho, técnico) com o que cada um vê.  
 **Efeito:** confiança sem expor rascunho político ou orçamento ainda em discussão.
 
 #### 7. Argumento para cobrar administradora e fornecedor
 Com dados, ela deixa de ser “só a síndica chata”.  
-**Pró Prediza:** “este equipamento já quebrou 3 vezes em 18 meses”.  
+**Pró Predizza:** “este equipamento já quebrou 3 vezes em 18 meses”.  
 **Efeito:** renegociação de contrato e escolha de fornecedor com base em fato.
 
 #### 8. Preparação de orçamento com menos retrabalho
 Hoje ela monta planilha na mão a cada assembleia.  
-**Pró Prediza:** forecast gerado a partir de planos + fichas + obras.  
+**Pró Predizza:** forecast gerado a partir de planos + fichas + obras.  
 **Efeito:** uma fonte da verdade; atualiza quando executa manutenção.
 
 ---
 
 ### Por que **não usaria** (barreiras)
 
-| Barreira | O que ela pensa | Risco para a Prediza |
+| Barreira | O que ela pensa | Risco para a Predizza |
 | --- | --- | --- |
 | Fadiga de sistema | “Já tenho portal da admin” | Conta criada, nunca mais abre |
 | Cadastro vazio | “Não tenho tempo de cadastrar o prédio” | Home sem número → abandono na 1ª semana |
@@ -129,7 +129,7 @@ Hoje ela monta planilha na mão a cada assembleia.
 
 5. **Resumo semanal no WhatsApp/e-mail**  
    “3 itens vencem em 30 dias · 1 ocorrência atrasada · reserva sugerida R$ X”.  
-   *Pró:* a Prediza vai até ela; ela não precisa lembrar de abrir.
+   *Pró:* a Predizza vai até ela; ela não precisa lembrar de abrir.
 
 6. **Lembrete pré-assembleia**  
    14 e 7 dias antes: “Sua pauta de reserva está pronta — revisar / exportar”.
@@ -161,7 +161,7 @@ Hoje ela monta planilha na mão a cada assembleia.
 #### E. Mensagem e posicionamento (Ana)
 
 - Falar **assembleia, reserva, tranquilidade** — não “gêmeo digital”.
-- Prova social: “Síndica aprovou fundo de obras com a previsão da Prediza.”
+- Prova social: “Síndica aprovou fundo de obras com a previsão da Predizza.”
 - Preço traduzido em “menos de X por unidade/mês” ou “menos que uma vistoria mal planejada”.
 
 #### F. Métricas de sucesso (Ana)
@@ -211,7 +211,7 @@ Ricardo é cobrado quando o síndico reclama e quando a diretoria pergunta “po
 - BIM interno não serve ao síndico nem ao técnico da assistência.
 - Cada condomínio inventa um processo depois da chave.
 
-### Como usa a Prediza (jornada ideal)
+### Como usa a Predizza (jornada ideal)
 
 1. **Entrega digital** no handover → fichas + docs + plano sugerido.
 2. 12–24 meses: monitora **ocorrências na garantia** por edifício.
@@ -224,49 +224,49 @@ Ricardo é cobrado quando o síndico reclama e quando a diretoria pergunta “po
 
 #### 1. Diferencial comercial na entrega
 “Vocês entregam o prédio com o mapa e as garantias organizadas” é frase de corretor e de memorial de vendas.  
-**Pró Prediza:** wizard de entrega + fichas + documentos.  
-**Efeito:** Prediza vira item de memorial / pós-venda, não só TI.
+**Pró Predizza:** wizard de entrega + fichas + documentos.  
+**Efeito:** Predizza vira item de memorial / pós-venda, não só TI.
 
 #### 2. Garantia sob governança
 Hoje o SLA vive na cabeça do SAC.  
-**Pró Prediza:** ocorrência com prazo, status, sistema, local, histórico.  
+**Pró Predizza:** ocorrência com prazo, status, sistema, local, histórico.  
 **Efeito:** menos chamado “sumido”; ranking do que estourou prazo.
 
 #### 3. Feedback loop para o próximo projeto
 A diretoria pergunta “fachada de novo?”. Ele precisa de evidência.  
-**Pró Prediza:** agregação por sistema/categoria/local ao longo de vários edifícios.  
-**Efeito:** Prediza alimenta engenharia de valor / lessons learned.
+**Pró Predizza:** agregação por sistema/categoria/local ao longo de vários edifícios.  
+**Efeito:** Predizza alimenta engenharia de valor / lessons learned.
 
 #### 4. Menos deslocamento inútil
 Técnico vai à obra sem saber o ponto nem o que já tentaram.  
-**Pró Prediza:** pin / ficha / histórico no celular.  
+**Pró Predizza:** pin / ficha / histórico no celular.  
 **Efeito:** visita única mais resolutiva; custo de assistência cai.
 
 #### 5. Mesma plataforma que o síndico
 O maior custo pós-obra é atrito de comunicação.  
-**Pró Prediza:** Ana e Ricardo veem o mesmo edifício (com papéis diferentes).  
+**Pró Predizza:** Ana e Ricardo veem o mesmo edifício (com papéis diferentes).  
 **Efeito:** menos “eu mandei no e-mail”; mais “está na ocorrência OC-…”.
 
 #### 6. Profissionalização do pacote de garantia
 Manuais e prazos de garantia espalhados.  
-**Pró Prediza:** garantia por sistema na ficha (`warrantyUntil`) + alertas.  
+**Pró Predizza:** garantia por sistema na ficha (`warrantyUntil`) + alertas.  
 **Efeito:** assistências dentro/fora de garantia ficam claras.
 
 #### 7. Escala no portfólio
 Com 10 prédios entregues, Excel não escala.  
-**Pró Prediza:** visão multi-edifício (modo construtora).  
+**Pró Predizza:** visão multi-edifício (modo construtora).  
 **Efeito:** priorizar onde colocar equipe de assistência.
 
 #### 8. Narrativa interna de inovação
 Construtoras médias querem parecer modernas sem trocar o ERP.  
-**Pró Prediza:** “camada de operação pós-obra + síndico”, não “substitui o Revit”.  
+**Pró Predizza:** “camada de operação pós-obra + síndico”, não “substitui o Revit”.  
 **Efeito:** compra mais fácil se posicionada como complemento.
 
 ---
 
 ### Por que **não usaria** (barreiras)
 
-| Barreira | O que ele pensa | Risco para a Prediza |
+| Barreira | O que ele pensa | Risco para a Predizza |
 | --- | --- | --- |
 | Redundância | “Já tenho BIM e planilha de SAC” | Não prioriza orçamento |
 | Modelo IFC atrasado | “Na entrega o IFC nunca está redondo” | Se BIM for obrigatório, atrasa adoção |
@@ -282,7 +282,7 @@ Construtoras médias querem parecer modernas sem trocar o ERP.
 
 #### A. Para ele **vender internamente** (compra)
 
-1. **Pacote “Entrega Prediza” (SKU claro)**  
+1. **Pacote “Entrega Predizza” (SKU claro)**  
    Por empreendimento: wizard + N usuários + 24 meses de garantia digital.  
    *Mensagem:* “Entregue o condomínio com a memória do prédio ligada.”
 
@@ -381,9 +381,9 @@ Construtoras médias querem parecer modernas sem trocar o ERP.
 
 ### Insight de produto (para gravar)
 
-> A melhor estratégia de adoção da Prediza é **Ricardo acender o edifício na entrega** e **Ana herdar a home de decisão já preenchida**.  
+> A melhor estratégia de adoção da Predizza é **Ricardo acender o edifício na entrega** e **Ana herdar a home de decisão já preenchida**.  
 > Se Ana tiver que cadastrar o prédio sozinha, a barreira “cadastro vazio” mata o uso.  
-> Se Ricardo entregar só PDF sem síndico ativo, a Prediza vira arquivo morto.
+> Se Ricardo entregar só PDF sem síndico ativo, a Predizza vira arquivo morto.
 
 ---
 
@@ -430,7 +430,7 @@ Construtoras médias querem parecer modernas sem trocar o ERP.
 ## Mensagens comerciais (rascunho)
 
 **Para Ana**  
-“A Prediza mostra o que vence, quanto reservar e onde agir — antes da assembleia, no celular.”
+“A Predizza mostra o que vence, quanto reservar e onde agir — antes da assembleia, no celular.”
 
 **Para Ricardo**  
 “Entregue o condomínio com a memória do prédio ligada — e acompanhe a garantia no mesmo mapa que o síndico usa.”

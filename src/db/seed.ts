@@ -21,7 +21,7 @@ import {
 import { rebuildForecast } from "../lib/forecast";
 
 async function main() {
-  const passwordHash = await bcrypt.hash("prediza123", 10);
+  const passwordHash = await bcrypt.hash("predizza123", 10);
 
   // reset demo (dev only)
   db.delete(forecastItems).run();
@@ -65,17 +65,17 @@ async function main() {
     .insert(users)
     .values([
       {
-        email: "sindico@prediza.demo",
+        email: "sindico@predizza.demo",
         name: "Ana Síndica",
         passwordHash,
       },
       {
-        email: "tecnico@prediza.demo",
+        email: "tecnico@predizza.demo",
         name: "Carlos Técnico",
         passwordHash,
       },
       {
-        email: "construtora@prediza.demo",
+        email: "construtora@predizza.demo",
         name: "Marina Construtora",
         passwordHash,
       },
@@ -356,8 +356,8 @@ async function main() {
 
   const check = db.select().from(buildings).where(eq(buildings.id, building.id)).get();
   console.log("Seed OK:", check?.name, "+ Condomínio Jardins (portfólio)");
-  console.log("Logins: sindico@prediza.demo / tecnico@prediza.demo / construtora@prediza.demo");
-  console.log("Senha: prediza123");
+  console.log("Logins: sindico@predizza.demo / tecnico@predizza.demo / construtora@predizza.demo");
+  console.log("Senha: predizza123");
 }
 
 main().catch((err) => {

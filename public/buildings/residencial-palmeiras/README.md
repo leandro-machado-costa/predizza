@@ -1,6 +1,6 @@
 # Residencial Jardim das Palmeiras (projeto exemplo)
 
-Edifício residencial multifamiliar de demonstração da Prediza.
+Edifício residencial multifamiliar de demonstração da Predizza.
 
 ## Tipologia
 

@@ -2,17 +2,17 @@
 
 ## Nome
 
-**Prediza** = prédio + predição.
+**Predizza** = prédio + predição.
 
 ## Promessa (wedge)
 
-**A Prediza é o kit de assembleia da síndica** — quanto reservar, o que não pode esperar e o que confirmar esta semana — com a memória do prédio viva.
+**A Predizza é o kit de assembleia da síndica** — quanto reservar, o que não pode esperar e o que confirmar esta semana — com a memória do prédio viva.
 
 Frases de efeito:
 
 - O mapa do prédio. A previsão das reformas.
 - Chegue na assembleia com o número certo.
-- O grupo continua; a Prediza só guarda o que você confirma.
+- O grupo continua; a Predizza só guarda o que você confirma.
 
 ## Problema
 
@@ -20,7 +20,7 @@ Informação de manutenção se perde no WhatsApp e na planilha. Troca de síndi
 
 ## Solução (em uma frase)
 
-**Reserva + risco + confirmação humana** em cima de fichas do edifício; a construtora **distribui** a Prediza na entrega digital; a síndica **usa** no celular para decidir.
+**Reserva + risco + confirmação humana** em cima de fichas do edifício; a construtora **distribui** a Predizza na entrega digital; a síndica **usa** no celular para decidir.
 
 ## Públicos (papéis claros)
 
@@ -42,9 +42,9 @@ Informação de manutenção se perde no WhatsApp e na planilha. Troca de síndi
 ## Sucesso de piloto (30 dias)
 
 1. Síndica exportou **1 pauta** de assembleia.
-2. Confirmou **≥5** relatos do WhatsApp na Prediza.
+2. Confirmou **≥5** relatos do WhatsApp na Predizza.
 3. Home mostra número de reserva que ela usou com o conselho.
 
 ## Base histórica
 
-O MVP **Predio360** (Netlify) provou ocorrências no mapa 3D. A Prediza reconstrói em Next.js + SQLite e prioriza previsão + hábito da síndica antes do BIM.
+O MVP **Predio360** (Netlify) provou ocorrências no mapa 3D. A Predizza reconstrói em Next.js + SQLite e prioriza previsão + hábito da síndica antes do BIM.

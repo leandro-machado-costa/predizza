@@ -5,20 +5,20 @@
 Implementação em [`src/lib/auth.ts`](../src/lib/auth.ts):
 
 1. Login valida e-mail/senha (`bcryptjs`).
-2. Cookie `prediza_session` = `userId.timestamp.hmac` (HTTP-only, SameSite=Lax).
+2. Cookie `predizza_session` = `userId.timestamp.hmac` (HTTP-only, SameSite=Lax).
 3. `getSession()` resolve usuário + membership (edifício + papel).
 
 Segredo: `AUTH_SECRET` (env) ou fallback de desenvolvimento.
 
 ## Contas demo (seed)
 
-Senha de todas: **`prediza123`**
+Senha de todas: **`predizza123`**
 
 | E-mail | Papel | Uso |
 | --- | --- | --- |
-| `sindico@prediza.demo` | síndico | Home de decisão, assembleia |
-| `tecnico@prediza.demo` | técnico | Mapa e ocorrências |
-| `construtora@prediza.demo` | construtora | Entrega digital + pós-obra |
+| `sindico@predizza.demo` | síndico | Home de decisão, assembleia |
+| `tecnico@predizza.demo` | técnico | Mapa e ocorrências |
+| `construtora@predizza.demo` | construtora | Entrega digital + pós-obra |
 
 Edifício seed: **Residencial Palmeiras** (`slug: palmeiras`).
 

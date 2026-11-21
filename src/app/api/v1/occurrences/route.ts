@@ -6,7 +6,7 @@ import { buildings, occurrenceEvents, occurrences } from "@/db/schema";
 import { dueDaysForPriority } from "@/lib/format";
 
 function authorize(req: Request) {
-  const key = process.env.PREDIZA_API_KEY;
+  const key = process.env.PREDIZZA_API_KEY;
   if (!key) return true; // dev: aberto se não configurado
   const hdr =
     req.headers.get("x-api-key") ||

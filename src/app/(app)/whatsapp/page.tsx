@@ -47,7 +47,7 @@ export default async function WhatsAppPage({
     <div className="space-y-6">
       <PageHeader
         title="WhatsApp"
-        subtitle="O grupo continua. A Prediza só guarda o que você confirmar — nada de dump."
+        subtitle="O grupo continua. A Predizza só guarda o que você confirmar — nada de dump."
       />
 
       <Card className="border-accent/20 bg-accent-container/25">
@@ -79,7 +79,7 @@ export default async function WhatsAppPage({
             <code className="text-foreground">Ignorar</code>
           </li>
           {evo.requireMention ? (
-            <li>Grupos: cite Prediza na mensagem (EVOLUTION_REQUIRE_MENTION=1)</li>
+            <li>Grupos: cite Predizza na mensagem (EVOLUTION_REQUIRE_MENTION=1)</li>
           ) : null}
         </ul>
         <p className="mt-2 text-sm">
@@ -106,7 +106,7 @@ export default async function WhatsAppPage({
               name="body"
               rows={3}
               required
-              placeholder="Ex.: Prediza — infiltração na garagem perto da bomba"
+              placeholder="Ex.: Predizza — infiltração na garagem perto da bomba"
             />
           </Field>
           <PrimaryButton type="submit">Enviar para triagem</PrimaryButton>

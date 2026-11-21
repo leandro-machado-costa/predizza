@@ -33,10 +33,10 @@ export async function createInviteAction(formData: FormData) {
   redirect(`/invites?created=${token}`);
 }
 
-/** Aceite simplificado: cria usuário com senha prediza123 se não existir */
+/** Aceite simplificado: cria usuário com senha predizza123 se não existir */
 export async function acceptInviteAction(formData: FormData) {
   const token = String(formData.get("token") ?? "");
-  const password = String(formData.get("password") ?? "prediza123");
+  const password = String(formData.get("password") ?? "predizza123");
   const invite = db
     .select()
     .from(invitations)

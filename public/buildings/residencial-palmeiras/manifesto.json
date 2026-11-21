@@ -2,8 +2,8 @@
   "id": "residencial-palmeiras",
   "name": "Residencial Jardim das Palmeiras",
   "version": 1,
-  "description": "Edifício residencial exemplo (torre única, 8 andares + térreo + cobertura técnica). Layout típico brasileiro para demo Prediza.",
-  "source": "Projeto demo Prediza — tipologia residencial multifamiliar padrão.",
+  "description": "Edifício residencial exemplo (torre única, 8 andares + térreo + cobertura técnica). Layout típico brasileiro para demo Predizza.",
+  "source": "Projeto demo Predizza — tipologia residencial multifamiliar padrão.",
   "dimensions": {
     "width": 18,
     "depth": 12,

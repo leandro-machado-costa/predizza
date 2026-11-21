@@ -53,7 +53,7 @@ export default async function ForecastPage({
     : null;
 
   const summaryWhatsApp = [
-    `*Prediza · ${session.buildingName}*`,
+    `*Predizza · ${session.buildingName}*`,
     `Reservar agora: ${formatBRL(sum(buckets.agir_agora))}`,
     `12 meses: ${formatBRL(sum([...buckets.agir_agora, ...buckets["12_meses"]]))}`,
     `3 anos: ${formatBRL(sum(buckets["3_anos"]))}`,

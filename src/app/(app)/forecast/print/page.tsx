@@ -25,7 +25,7 @@ export default async function ForecastPrintPage() {
     rows.reduce((acc, r) => acc + (r.estimatedCost ?? 0), 0);
 
   const whatsappText = [
-    `*Prediza · ${session.buildingName}*`,
+    `*Predizza · ${session.buildingName}*`,
     `Assembleia — previsão`,
     "",
     `Agir agora: ${formatBRL(sum(buckets.agir_agora))} (${buckets.agir_agora.length})`,
@@ -44,7 +44,7 @@ export default async function ForecastPrintPage() {
       </div>
 
       <header className="mb-6 border-b border-neutral-300 pb-4">
-        <p className="text-sm uppercase tracking-wide text-neutral-500">Prediza</p>
+        <p className="text-sm uppercase tracking-wide text-neutral-500">Predizza</p>
         <h1 className="text-2xl font-bold">{session.buildingName}</h1>
         <p className="text-sm text-neutral-600">
           Relatório para assembleia · {formatDate(new Date().toISOString())}

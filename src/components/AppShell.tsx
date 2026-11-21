@@ -34,7 +34,7 @@ export function AppShell({
           style={{ minHeight: "var(--appbar-h)" }}
         >
           <Link href="/dashboard" className="brand-mark shrink-0 text-2xl sm:text-[1.75rem]">
-            Prediza
+            Predizza
           </Link>
           <div className="hidden h-8 w-px bg-line/70 sm:block" aria-hidden />
           <div className="min-w-0 flex-1">

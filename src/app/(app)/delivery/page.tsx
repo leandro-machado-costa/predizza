@@ -43,7 +43,7 @@ export default async function DeliveryPage({
     <div className="space-y-8">
       <PageHeader
         title="Entrega digital"
-        subtitle="Construtora sobe plantas, manuais e garantias. A Prediza gera fichas e a primeira previsão."
+        subtitle="Construtora sobe plantas, manuais e garantias. A Predizza gera fichas e a primeira previsão."
       />
 
       {sp.wizard === "ok" ? (

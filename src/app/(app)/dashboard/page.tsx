@@ -82,12 +82,12 @@ export default async function DashboardPage() {
     .all();
 
   const councilBlurb = [
-    `Prediza · ${session.buildingName}`,
+    `Predizza · ${session.buildingName}`,
     `Reserva sugerida (12 meses): ${formatBRL(reserve12)}`,
     `Prioridade imediata: ${formatBRL(riskNow)} (${actNow.length} itens)`,
     `Ocorrências abertas: ${openOcc.length}`,
     "",
-    "Detalhes e PDF: abra Assembleia na Prediza.",
+    "Detalhes e PDF: abra Assembleia na Predizza.",
   ].join("\n");
 
   return (

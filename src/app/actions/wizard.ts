@@ -71,7 +71,7 @@ export async function runDeliveryWizardAction(formData: FormData) {
           name: tpl.name,
           category: tpl.category,
           locationLabel: tpl.locationLabel,
-          specs: "Criado pelo wizard de entrega Prediza",
+          specs: "Criado pelo wizard de entrega Predizza",
           warrantyUntil: dates.warrantyUntil,
           periodicityMonths: tpl.periodicityMonths,
           nextDueAt: dates.nextDueAt,

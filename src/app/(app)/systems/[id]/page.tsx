@@ -51,7 +51,7 @@ export default async function SystemDetailPage({
     .all();
 
   const quoteText = [
-    `Pedido de orçamento — Prediza`,
+    `Pedido de orçamento — Predizza`,
     `Edifício: ${session?.buildingName ?? ""}`,
     `Sistema: ${system.name} (${system.category})`,
     `Local: ${system.locationLabel ?? "—"}`,

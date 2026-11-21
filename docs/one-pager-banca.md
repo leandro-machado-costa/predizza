@@ -1,10 +1,10 @@
-# Prediza — One-pager (banca)
+# Predizza — One-pager (banca)
 
 *Uma página · imprimir ou PDF · preencher [ ] da equipe*
 
 ---
 
-# PREDIZA
+# PREDIZZA
 ### Chegue na assembleia com o número certo.
 
 **O mapa do prédio. A previsão das reformas.**  
@@ -31,7 +31,7 @@ Manutenção e patologias vivem no **WhatsApp** e na planilha. Troca de síndico
 ---
 
 ### Agente de IA (fluxo)
-`Mensagem` → Evolution → **triagem com contexto do edifício (SQLite)** → resposta no grupo → humano CONFIRMAR / VINCULAR / IGNORAR → ocorrência na Prediza
+`Mensagem` → Evolution → **triagem com contexto do edifício (SQLite)** → resposta no grupo → humano CONFIRMAR / VINCULAR / IGNORAR → ocorrência na Predizza
 
 **Ativo próprio:** forecast recalculável + histórico de OCs + motor heurístico (LLM opcional, nunca bloqueante).
 
@@ -39,7 +39,7 @@ Manutenção e patologias vivem no **WhatsApp** e na planilha. Troca de síndico
 
 ### Diferencial
 
-| Alternativa | Prediza |
+| Alternativa | Predizza |
 | --- | --- |
 | Grupo / planilha | Memória confirmada + R$ |
 | App de boleto | Preventiva + assembleia |
@@ -60,8 +60,8 @@ Manutenção e patologias vivem no **WhatsApp** e na planilha. Troca de síndico
 
 **Evolução:** MVP mapa 3D → kit assembleia → agente WhatsApp com humano no loop.
 
-**Contato:** `[e-mail]` · **Demo:** login `sindico@prediza.demo` · app local / URL do piloto
+**Contato:** `[e-mail]` · **Demo:** login `sindico@predizza.demo` · app local / URL do piloto
 
 ---
 
-*Prediza — prédio + predição · docs/evento-avaliacao.md*
+*Predizza — prédio + predição · docs/evento-avaliacao.md*

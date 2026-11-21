@@ -1,4 +1,4 @@
-# Evolution API — WhatsApp para a Prediza (dev local)
+# Evolution API — WhatsApp para a Predizza (dev local)
 # Uso: docker compose up -d
 # Depois: crie a instância, escaneie o QR e aponte o webhook para
 #   https://SEU_HOST/api/whatsapp/webhook  (ou tunnel ngrok/cloudflared)
@@ -28,7 +28,7 @@ services:
       - "host.docker.internal:host-gateway"
     environment:
       SERVER_URL: http://localhost:8085
-      AUTHENTICATION_API_KEY: prediza-evolution-key
+      AUTHENTICATION_API_KEY: predizza-evolution-key
       DATABASE_ENABLED: "true"
       DATABASE_PROVIDER: postgresql
       DATABASE_CONNECTION_URI: postgresql://evolution:evolution@evolution-postgres:5432/evolution?schema=public

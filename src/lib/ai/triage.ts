@@ -122,7 +122,7 @@ export function heuristicTriage(input: TriageInput): TriageResult {
   return {
     isMaintenance: true,
     title,
-    description: `Relato: ${input.text.trim()}\n\n(Descrição técnica sugerida pela Prediza — revisar antes de salvar.)`,
+    description: `Relato: ${input.text.trim()}\n\n(Descrição técnica sugerida pela Predizza — revisar antes de salvar.)`,
     priority,
     suggestedSystemId: system?.id ?? null,
     suggestedSystemName: system?.name ?? null,
@@ -213,7 +213,7 @@ export function buildAssemblyText(input: {
     n.toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 });
 
   const lines = [
-    `*Pauta Prediza — ${input.buildingName}*`,
+    `*Pauta Predizza — ${input.buildingName}*`,
     "",
     `*Agir agora:* ${brl(input.totals.actNow)} (${input.actNow.length} itens)`,
     ...input.actNow.slice(0, 8).map((i) => `• ${i.title} — até ${i.dueAt} — ${brl(i.estimatedCost)}`),
@@ -226,7 +226,7 @@ export function buildAssemblyText(input: {
     `*Ocorrências abertas:* ${input.openOcc.length}`,
     ...input.openOcc.slice(0, 6).map((o) => `• ${o.code} — ${o.title} (${o.priority})`),
     "",
-    "_Gerado pela Prediza — revisar antes da assembleia._",
+    "_Gerado pela Predizza — revisar antes da assembleia._",
   ];
   return lines.join("\n");
 }

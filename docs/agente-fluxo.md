@@ -1,4 +1,4 @@
-# Fluxo do agente de IA — Prediza
+# Fluxo do agente de IA — Predizza
 
 Documentação de **inputs → lógica → outputs** do agente de triagem (WhatsApp + app).  
 Resumo também no [`README.md`](../README.md).
@@ -59,7 +59,7 @@ Código: [`src/lib/ai/triage.ts`](../src/lib/ai/triage.ts) · [`src/lib/whatsapp
 ### 1. Pré-filtros (WhatsApp)
 
 - Ignora `fromMe`
-- Opcional: exige menção a Prediza (`EVOLUTION_REQUIRE_MENTION=1`)
+- Opcional: exige menção a Predizza (`EVOLUTION_REQUIRE_MENTION=1`)
 - Dedupe por `messageId` ou texto recente igual
 - Comandos `CONFIRMAR|VINCULAR|IGNORAR {id}` → resolvem evento pendente
 
@@ -79,7 +79,7 @@ Código: [`src/lib/ai/triage.ts`](../src/lib/ai/triage.ts) · [`src/lib/whatsapp
 
 ### 4. Gate humano (obrigatório para criar OC)
 
-Sem CONFIRMAR / “Criar ocorrência” no app → **não** há ocorrência nova definitiva no domínio Prediza (ruído pode ficar só como `ignored`).
+Sem CONFIRMAR / “Criar ocorrência” no app → **não** há ocorrência nova definitiva no domínio Predizza (ruído pode ficar só como `ignored`).
 
 ---
 
@@ -116,7 +116,7 @@ Ver [`demo-agente.md`](./demo-agente.md).
 
 ```bash
 npm install && npm run db:push && npm run db:seed && npm run dev
-# Login: sindico@prediza.demo / prediza123
+# Login: sindico@predizza.demo / predizza123
 # Mais → WhatsApp → simular mensagem → Confirmar
 ```
 

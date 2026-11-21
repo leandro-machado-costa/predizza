@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 
-const threeShim = path.join(__dirname, "src/lib/three-prediza.js");
+const threeShim = path.join(__dirname, "src/lib/three-predizza.js");
 
 const nextConfig: NextConfig = {
   // That Open não lida bem com double-mount do Strict Mode no viewer IFC

@@ -97,7 +97,7 @@ export function IfcViewer({ ifcUrl, className = "" }: Props) {
         const buffer = new Uint8Array(await file.arrayBuffer());
         if (!stillActive()) return;
 
-        await ifcLoader.load(buffer, false, `prediza-${Date.now()}`, {
+        await ifcLoader.load(buffer, false, `predizza-${Date.now()}`, {
           processData: {
             progressCallback: (p: number) => {
               if (stillActive()) setProgress(Math.round((p || 0) * 100));

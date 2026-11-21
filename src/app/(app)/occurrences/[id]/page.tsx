@@ -64,7 +64,7 @@ export default async function OccurrenceDetailPage({
   const evoOk = isEvolutionConfigured();
 
   const delegateText = [
-    `Prediza · ${occ.code}`,
+    `Predizza · ${occ.code}`,
     occ.title,
     `Prazo: ${formatDate(occ.dueAt)} · Prioridade: ${priorityLabel[occ.priority] ?? occ.priority}`,
     system ? `Sistema: ${system.name}` : null,
@@ -75,7 +75,7 @@ export default async function OccurrenceDetailPage({
     .join("\n");
 
   const groupPreview = [
-    `*Prediza* · ${occ.code} *concluída*`,
+    `*Predizza* · ${occ.code} *concluída*`,
     occ.title,
     "",
     occ.resolutionNote || "[seu texto de resolução]",

@@ -47,7 +47,7 @@ export async function deferWorkAction(formData: FormData) {
         .set({
           startAt: pushDate(row.startAt, months),
           endAt: pushDate(row.endAt, months),
-          notes: `${row.notes ?? ""}\n[Adiado ${months} mês(es) via Prediza]`.trim(),
+          notes: `${row.notes ?? ""}\n[Adiado ${months} mês(es) via Predizza]`.trim(),
         })
         .where(eq(works.id, id))
         .run();

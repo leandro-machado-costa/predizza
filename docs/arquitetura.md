@@ -12,7 +12,7 @@
 | Auth | Cookie HTTP-only assinado (HMAC) + bcrypt |
 | Datas | date-fns |
 
-Arquivo do banco (dev): `data/prediza.sqlite`.
+Arquivo do banco (dev): `data/predizza.sqlite`.
 
 ## Diagrama lógico
 
