@@ -2,12 +2,9 @@
 
 **Entregável:** protótipo funcional (ao vivo ou gravado).
 
-### Vídeos gravados
+### Vídeo gravado
 
-| Arquivo | Duração | Conteúdo |
-| --- | --- | --- |
-| [`../public/demo/predizza-demo-agente.mp4`](../public/demo/predizza-demo-agente.mp4) | ~68 s | Demo principal do agente |
-| [`../public/demo/predizza-demo-whatsapp.mp4`](../public/demo/predizza-demo-whatsapp.mp4) | ~18 s | Conversa WhatsApp (HTML) |
+[`../public/demo/predizza-demo.mp4`](../public/demo/predizza-demo.mp4) — **~86 s** (app/agente + conversa WhatsApp, juntos)
 
 **Gravação passo a passo (cliques + fala + cronômetro):** [`roteiro-gravacao-demo.md`](./roteiro-gravacao-demo.md)
 
